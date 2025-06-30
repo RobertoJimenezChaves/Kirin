@@ -1,0 +1,87 @@
+{
+  "uuid": "807f86c2-097c-4144-bbe5-ab738304d7e9",
+  "lastMigration": 33,
+  "name": "Kirin",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c1edfe5d-2083-4dac-a03e-deb0c2971814",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "getCollaboratorList",
+      "responses": [
+        {
+          "uuid": "f12e7aef-a336-4395-ac67-8ff8a4500663",
+          "body": "{\n    \"collaboratorsList\": [\n        {\n            \"id\": 1,\n            \"name\": \"Toji Fushiguro\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Sasuke Uchiha\",\n            \"nameLetter\": \"SU\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Kyojuro Rengoku\",\n            \"nameLetter\": \"KR\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ash Ketchum\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Satoru Gojou\",\n            \"nameLetter\": \"SU\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Sung Jin Woo\",\n            \"nameLetter\": \"KR\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ken Takakura\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        }\n    ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c1edfe5d-2083-4dac-a03e-deb0c2971814"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

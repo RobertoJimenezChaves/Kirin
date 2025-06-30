@@ -1,0 +1,81 @@
+{
+    "collaboratorsList": [
+        {
+            "id": 1,
+            "name": "Toji Fushiguro",
+            "nameLetter": "TF",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 2,
+            "name": "Sasuke Uchiha",
+            "nameLetter": "SU",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 3,
+            "name": "Kyojuro Rengoku",
+            "nameLetter": "KR",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 4,
+            "name": "Ash Ketchum",
+            "nameLetter": "TF",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 5,
+            "name": "Satoru Gojou",
+            "nameLetter": "SU",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 6,
+            "name": "Sung Jin Woo",
+            "nameLetter": "KR",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        },
+        {
+            "id": 7,
+            "name": "Ken Takakura",
+            "nameLetter": "TF",
+            "workStartDate": "2019-08-01T00:00:00",
+            "initialBalance": 0,
+            "registerDate": "2019-08-01T00:00:00",
+            "requestedDays": 0,
+            "statusCode": "ACT",
+            "availableDays": 6
+        }
+    ]
+}
