@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:kirin/config/theme/custom_styles.dart';
 import 'package:kirin/config/theme/custom_text_styles.dart';
 import 'package:kirin/features/home/data/models/collaborator.dart';
 
@@ -52,16 +53,15 @@ class _CardBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final customStyle = Theme.of(context).extension<CustomStyles>()!;
+
     return Container(
       margin: const EdgeInsets.all(15),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
         child: Container(
           height: 180,
-          decoration: BoxDecoration(
-            color: const Color.fromRGBO(62, 66, 107, 0.7), //Color.fromRGBO(62, 66, 107, 0.7), //fromARGB(179, 122, 70, 70)
-            borderRadius: BorderRadius.circular(20),
-          ),
+          decoration: customStyle.boxDecorationStyle,
           child: child,
         ),
       ),

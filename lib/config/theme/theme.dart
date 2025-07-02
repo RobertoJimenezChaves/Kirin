@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kirin/config/theme/custom_styles.dart';
 import 'package:kirin/config/theme/custom_text_styles.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -6,15 +7,31 @@ part 'theme.g.dart';
 
 final lightTheme = ThemeData(
   brightness: Brightness.light,
-  appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent, elevation: 0, foregroundColor: Color.fromARGB(255, 255, 233, 237)),
+  appBarTheme: const AppBarTheme(
+    backgroundColor: Colors.transparent,
+    elevation: 0,
+    foregroundColor: Color.fromARGB(255, 255, 233, 237),
+  ),
   //0xFF6A1B9A
   iconButtonTheme: const IconButtonThemeData(
     style: ButtonStyle(iconColor: WidgetStatePropertyAll<Color>(Color.fromARGB(255, 92, 91, 91))),
   ),
-  extensions: const [
-    CustomTextStyles(
+  cardTheme: const CardTheme(
+    color: Color.fromARGB(255, 62, 66, 107),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(20)),
+    ),
+  ),
+  extensions: [
+    const CustomTextStyles(
       letterAvatarStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
       text18Style: TextStyle(fontSize: 18),
+    ),
+    CustomStyles(
+      boxDecorationStyle: BoxDecoration(
+        color: const Color.fromARGB(179, 255, 253, 253),
+        borderRadius: BorderRadius.circular(20),
+      ),
     ),
   ],
 );
@@ -25,14 +42,25 @@ final darkTheme = ThemeData(
   iconButtonTheme: const IconButtonThemeData(
     style: ButtonStyle(iconColor: WidgetStatePropertyAll<Color>(Colors.white)),
   ),
-  extensions: const [
-    CustomTextStyles(
+  cardTheme: const CardTheme(
+    color: Color.fromARGB(255, 62, 66, 107),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(20)),
+    ),
+  ),
+  extensions:  [
+     const CustomTextStyles(
       letterAvatarStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
       text18Style: TextStyle(fontSize: 18),
     ),
+    CustomStyles(
+      boxDecorationStyle: BoxDecoration(
+        color: const Color.fromRGBO(62, 66, 107, 0.7),
+        borderRadius: BorderRadius.circular(20),
+      ),
+    ),
   ],
 );
-
 
 @riverpod
 class ThemeStyleMode extends _$ThemeStyleMode {
@@ -42,5 +70,4 @@ class ThemeStyleMode extends _$ThemeStyleMode {
   void toggleTheme() {
     state = state == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
   }
-  
 }

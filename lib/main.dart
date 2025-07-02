@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kirin/features/home/presentation/screen/home_screen.dart';
+import 'package:kirin/config/routing/app_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:kirin/config/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -14,11 +14,12 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
+    final goRouter = ref.watch(appRouterProvider);
     final themeMode = ref.watch(themeStyleModeProvider);
 
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
+      routerConfig: goRouter,
       themeMode: themeMode,
       theme: lightTheme,
       darkTheme: darkTheme,
@@ -33,7 +34,6 @@ class MyApp extends ConsumerWidget {
         Locale('es'), 
       ],
       locale: const Locale('es'), 
-      home: const HomeScreen(),
     );
   }
 }
