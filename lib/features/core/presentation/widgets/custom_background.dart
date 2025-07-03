@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
-class Background extends StatelessWidget {
+class CustomBackground extends StatelessWidget {
 
-  const Background({super.key});
+  const CustomBackground({super.key});
 
   @override
   Widget build(BuildContext context) {

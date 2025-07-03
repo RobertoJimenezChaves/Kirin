@@ -1,4 +1,11 @@
 {
     "@@locale": "es",
+    "login": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "email_required":"Correo electrónico requerido",
+    "email_invalid":"Correo electrónico inválido",
+    "password": "Contraseña",
+    "password_required": "Contraseña requerida",
+    "password_invalid":"Formato contraseña inválido",
     "collaborators": "Colaboradores"
 }

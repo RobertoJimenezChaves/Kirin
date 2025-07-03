@@ -3,9 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:kirin/config/theme/theme.dart';
 import 'package:kirin/features/home/presentation/viewmodel/collaborator_view_model.dart';
 import 'package:kirin/features/home/presentation/widgets/collaborator_grid.dart';
-import 'package:kirin/features/common/presentation/widgets/background.dart';
+import 'package:kirin/features/core/presentation/widgets/custom_background.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:kirin/features/common/presentation/widgets/custom_app_bar.dart';
+import 'package:kirin/features/core/presentation/widgets/custom_app_bar.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -32,7 +32,7 @@ class HomeScreen extends ConsumerWidget {
       ),
       body: Stack(
         children: [
-          const Background(),
+          const CustomBackground(),
           SafeArea(
             child: collaboratorViewModel.when(
               data: (collaborators) {
