@@ -7,7 +7,6 @@ import 'package:kirin/config/theme/theme.dart';
 import 'package:kirin/features/core/presentation/widgets/custom_background.dart';
 import 'package:kirin/features/core/presentation/widgets/custom_app_bar.dart';
 import 'package:kirin/features/core/utils/validators.dart';
-import 'package:kirin/features/login/presentation/viewmodel/login_view_model.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -28,7 +27,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     final themeMode = ref.watch(themeStyleModeProvider);
     final isDarkMode = themeMode == ThemeMode.dark;
     final customStyle = Theme.of(context).extension<CustomStyles>()!;
-    final loginViewModelNotifier = ref.read(loginViewModelProvider.notifier);
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -67,7 +65,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                             labelText: localizations.email,
                             prefixIcon: const Icon(Icons.email_outlined),
                           ),
-                          validator: (value) => loginViewModelNotifier.validateEmail(value, localizations),
+                          validator: (value) => Validators.validateEmail(value, localizations),
                         ),
                         const SizedBox(height: 16),
                         TextFormField(
@@ -85,7 +83,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                               },
                             ),
                           ),
-                          validator: (value) => loginViewModelNotifier.validatePassword(value, localizations),
+                          validator: (value) => Validators.validatePassword(value, localizations),
                         ),
                         const SizedBox(height: 50),
 
