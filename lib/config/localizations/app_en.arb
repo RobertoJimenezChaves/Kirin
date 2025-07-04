@@ -7,5 +7,11 @@
     "password": "Password",
     "password_required": "Password is required",
     "password_invalid":"Invalid password format",
-    "collaborators": "Collaborators"
+    "collaborators": "Collaborators",
+    "addCollaborator": "Add Collaborator",
+    "name": "Name",
+    "field_required":"Field is required",
+    "work_start_date": "Work start date",
+    "initial_balance": "Initial balance",
+    "add": "Add"
 }

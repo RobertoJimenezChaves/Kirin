@@ -1,27 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'collaborator_view_model.dart';
+part of 'edit_collaborator_view_model.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$collaboratorViewModelHash() =>
-    r'cd2767280e3a12ad3a2c92417d56db7d90e08444';
+String _$editCollaboratorViewModelHash() =>
+    r'70cf541869e3f145f4f6ce258659fceeb6bbc2f2';
 
-/// See also [CollaboratorViewModel].
-@ProviderFor(CollaboratorViewModel)
-final collaboratorViewModelProvider = AutoDisposeAsyncNotifierProvider<
-    CollaboratorViewModel, List<Collaborator>>.internal(
-  CollaboratorViewModel.new,
-  name: r'collaboratorViewModelProvider',
+/// See also [EditCollaboratorViewModel].
+@ProviderFor(EditCollaboratorViewModel)
+final editCollaboratorViewModelProvider =
+    AutoDisposeNotifierProvider<EditCollaboratorViewModel, void>.internal(
+  EditCollaboratorViewModel.new,
+  name: r'editCollaboratorViewModelProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$collaboratorViewModelHash,
+      : _$editCollaboratorViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$CollaboratorViewModel = AutoDisposeAsyncNotifier<List<Collaborator>>;
+typedef _$EditCollaboratorViewModel = AutoDisposeNotifier<void>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

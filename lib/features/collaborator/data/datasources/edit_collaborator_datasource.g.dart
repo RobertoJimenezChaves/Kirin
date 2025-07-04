@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'collaborator_datasource.dart';
+part of 'edit_collaborator_datasource.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,8 +8,8 @@ part of 'collaborator_datasource.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _CollaboratorDataSource implements CollaboratorDataSource {
-  _CollaboratorDataSource(
+class _EditCollaboratorDataSource implements EditCollaboratorDataSource {
+  _EditCollaboratorDataSource(
     this._dio, {
     this.baseUrl,
   }) {
@@ -21,20 +21,21 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
   String? baseUrl;
 
   @override
-  Future<CollaboratorResponse> getCollaborators() async {
+  Future<EditCollaboratorResponse> editCollaborator(
+      {required Collaborator collaborator}) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<CollaboratorResponse>(Options(
-      method: 'GET',
+        _setStreamType<EditCollaboratorResponse>(Options(
+      method: 'POST',
       headers: _headers,
       extra: _extra,
     )
             .compose(
               _dio.options,
-              '/get-collaborator-list',
+              '/add-collaborator',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -43,7 +44,7 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final value = CollaboratorResponse.fromJson(_result.data!);
+    final value = EditCollaboratorResponse.fromJson(_result.data!);
     return value;
   }
 

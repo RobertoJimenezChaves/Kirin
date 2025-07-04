@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kirin/config/theme/custom_styles.dart';
-import 'package:kirin/config/theme/custom_text_styles.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+import 'custom_styles.dart';
+import 'custom_text_styles.dart';
 
 part 'theme.g.dart';
 
@@ -18,8 +19,12 @@ final lightTheme = ThemeData(
   ),
   cardTheme: const CardTheme(
     color: Color.fromARGB(255, 62, 66, 107),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(20)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
     ),
   ),
   extensions: [
@@ -44,12 +49,16 @@ final darkTheme = ThemeData(
   ),
   cardTheme: const CardTheme(
     color: Color.fromARGB(255, 62, 66, 107),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(20)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
     ),
   ),
-  extensions:  [
-     const CustomTextStyles(
+  extensions: [
+    const CustomTextStyles(
       letterAvatarStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
       text18Style: TextStyle(fontSize: 18),
     ),
