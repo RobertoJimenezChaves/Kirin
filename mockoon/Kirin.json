@@ -13,11 +13,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "getCollaboratorList",
+      "endpoint": "get-collaborator-list",
       "responses": [
         {
           "uuid": "f12e7aef-a336-4395-ac67-8ff8a4500663",
-          "body": "{\n    \"collaboratorsList\": [\n        {\n            \"id\": 1,\n            \"name\": \"Toji Fushiguro\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Sasuke Uchiha\",\n            \"nameLetter\": \"SU\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Kyojuro Rengoku\",\n            \"nameLetter\": \"KR\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ash Ketchum\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Satoru Gojou\",\n            \"nameLetter\": \"SU\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Sung Jin Woo\",\n            \"nameLetter\": \"KR\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ken Takakura\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACT\",\n            \"availableDays\": 6\n        }\n    ]\n}",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"collaboratorsList\": [\n            {\n                \"id\": 1,\n                \"name\": \"Toji Fushiguro\",\n                \"nameLetter\": \"TF\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Sasuke Uchiha\",\n                \"nameLetter\": \"SU\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Kyojuro Rengoku\",\n                \"nameLetter\": \"KR\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Ash Ketchum\",\n                \"nameLetter\": \"AK\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Satoru Gojou\",\n                \"nameLetter\": \"SG\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Sung Jin Woo\",\n                \"nameLetter\": \"SJ\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Ken Takakura\",\n                \"nameLetter\": \"KT\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            }\n        ]\n    }\n}",
           "latency": 1000,
           "statusCode": 200,
           "label": "",
@@ -43,12 +43,71 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "985ad5ff-911c-40c9-a824-5a025b4642da",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "add-collaborator",
+      "responses": [
+        {
+          "uuid": "9d7ee50d-ee82-4fd2-80c5-e510546957d3",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n      \"id\": 0,\n      \"availableDays\": 4\n    }\n}",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ccc7a7b8-3d6d-4db9-82ea-4a5665e19c18",
+          "body": "{\n    \"success\": false\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "c1edfe5d-2083-4dac-a03e-deb0c2971814"
+    },
+    {
+      "type": "route",
+      "uuid": "985ad5ff-911c-40c9-a824-5a025b4642da"
     }
   ],
   "proxyMode": false,
