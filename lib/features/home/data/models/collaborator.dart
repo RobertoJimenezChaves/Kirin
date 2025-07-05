@@ -15,9 +15,21 @@ class Collaborator with _$Collaborator {
     required int requestedDays,
     required String statusCode,
     required int availableDays,
-
   }) = _Collaborator;
 
-  factory Collaborator.fromJson(Map<String, dynamic> json) =>
-      _$CollaboratorFromJson(json);
+  factory Collaborator.createNew({required String name, required DateTime workStartDate, required int initialBalance}) {
+    return Collaborator(
+      id: 0,
+      name: name,
+      nameLetter: name.isNotEmpty ? name[0].toUpperCase() : '',
+      workStartDate: workStartDate,
+      initialBalance: initialBalance,
+      registerDate: DateTime.now(),
+      requestedDays: 0,
+      statusCode: 'A',
+      availableDays: 0,
+    );
+  }
+
+  factory Collaborator.fromJson(Map<String, dynamic> json) => _$CollaboratorFromJson(json);
 }

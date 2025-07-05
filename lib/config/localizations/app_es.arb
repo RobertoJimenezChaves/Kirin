@@ -7,5 +7,11 @@
     "password": "Contraseña",
     "password_required": "Contraseña requerida",
     "password_invalid":"Formato contraseña inválido",
-    "collaborators": "Colaboradores"
+    "collaborators": "Colaboradores",
+    "addCollaborator": "Agregar colaborador",
+    "name": "Nombre",
+    "field_required":"Campo requerido",
+    "work_start_date": "Inicio laboral",
+    "initial_balance": "Saldo inicial",
+    "add": "Agregar"
 }

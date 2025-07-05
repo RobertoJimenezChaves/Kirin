@@ -9,6 +9,7 @@ class CustomBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    //TODO: Asociar estos colores a un tema
     final gradientColors =
         theme.brightness == Brightness.light
             ? const [Color.fromARGB(255, 246, 206, 206), Color.fromARGB(255, 245, 229, 229)]

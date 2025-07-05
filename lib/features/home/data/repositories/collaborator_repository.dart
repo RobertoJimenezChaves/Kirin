@@ -1,6 +1,8 @@
-import 'package:kirin/features/home/data/datasources/collaborator_datasource.dart';
-import 'package:kirin/features/home/data/models/collaborator_response.dart';
-import 'package:kirin/features/home/domain/repository/collaborator_repository.dart';
+
+
+import '../../domain/repositories/collaborator_repository.dart';
+import '../datasources/collaborator_datasource.dart';
+import '../models/collaborator_response.dart';
 
 class CollaboratorRepositoryImp implements CollaboratorRepository {
   final CollaboratorDataSource dataSource;

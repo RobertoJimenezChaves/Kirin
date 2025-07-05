@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'collaborator_response.dart';
+part of 'edit_collaborator_response.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,30 +14,31 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-CollaboratorResponse _$CollaboratorResponseFromJson(Map<String, dynamic> json) {
-  return _CollaboratorResponse.fromJson(json);
+EditCollaboratorResponse _$EditCollaboratorResponseFromJson(
+    Map<String, dynamic> json) {
+  return _EditCollaboratorResponse.fromJson(json);
 }
 
 /// @nodoc
-mixin _$CollaboratorResponse {
+mixin _$EditCollaboratorResponse {
   String get status => throw _privateConstructorUsedError;
   DataResponse get data => throw _privateConstructorUsedError;
 
-  /// Serializes this CollaboratorResponse to a JSON map.
+  /// Serializes this EditCollaboratorResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $CollaboratorResponseCopyWith<CollaboratorResponse> get copyWith =>
+  $EditCollaboratorResponseCopyWith<EditCollaboratorResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CollaboratorResponseCopyWith<$Res> {
-  factory $CollaboratorResponseCopyWith(CollaboratorResponse value,
-          $Res Function(CollaboratorResponse) then) =
-      _$CollaboratorResponseCopyWithImpl<$Res, CollaboratorResponse>;
+abstract class $EditCollaboratorResponseCopyWith<$Res> {
+  factory $EditCollaboratorResponseCopyWith(EditCollaboratorResponse value,
+          $Res Function(EditCollaboratorResponse) then) =
+      _$EditCollaboratorResponseCopyWithImpl<$Res, EditCollaboratorResponse>;
   @useResult
   $Res call({String status, DataResponse data});
 
@@ -45,17 +46,17 @@ abstract class $CollaboratorResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CollaboratorResponseCopyWithImpl<$Res,
-        $Val extends CollaboratorResponse>
-    implements $CollaboratorResponseCopyWith<$Res> {
-  _$CollaboratorResponseCopyWithImpl(this._value, this._then);
+class _$EditCollaboratorResponseCopyWithImpl<$Res,
+        $Val extends EditCollaboratorResponse>
+    implements $EditCollaboratorResponseCopyWith<$Res> {
+  _$EditCollaboratorResponseCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -75,7 +76,7 @@ class _$CollaboratorResponseCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -87,11 +88,12 @@ class _$CollaboratorResponseCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$CollaboratorResponseImplCopyWith<$Res>
-    implements $CollaboratorResponseCopyWith<$Res> {
-  factory _$$CollaboratorResponseImplCopyWith(_$CollaboratorResponseImpl value,
-          $Res Function(_$CollaboratorResponseImpl) then) =
-      __$$CollaboratorResponseImplCopyWithImpl<$Res>;
+abstract class _$$EditCollaboratorResponseImplCopyWith<$Res>
+    implements $EditCollaboratorResponseCopyWith<$Res> {
+  factory _$$EditCollaboratorResponseImplCopyWith(
+          _$EditCollaboratorResponseImpl value,
+          $Res Function(_$EditCollaboratorResponseImpl) then) =
+      __$$EditCollaboratorResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String status, DataResponse data});
@@ -101,14 +103,16 @@ abstract class _$$CollaboratorResponseImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$CollaboratorResponseImplCopyWithImpl<$Res>
-    extends _$CollaboratorResponseCopyWithImpl<$Res, _$CollaboratorResponseImpl>
-    implements _$$CollaboratorResponseImplCopyWith<$Res> {
-  __$$CollaboratorResponseImplCopyWithImpl(_$CollaboratorResponseImpl _value,
-      $Res Function(_$CollaboratorResponseImpl) _then)
+class __$$EditCollaboratorResponseImplCopyWithImpl<$Res>
+    extends _$EditCollaboratorResponseCopyWithImpl<$Res,
+        _$EditCollaboratorResponseImpl>
+    implements _$$EditCollaboratorResponseImplCopyWith<$Res> {
+  __$$EditCollaboratorResponseImplCopyWithImpl(
+      _$EditCollaboratorResponseImpl _value,
+      $Res Function(_$EditCollaboratorResponseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -116,7 +120,7 @@ class __$$CollaboratorResponseImplCopyWithImpl<$Res>
     Object? status = null,
     Object? data = null,
   }) {
-    return _then(_$CollaboratorResponseImpl(
+    return _then(_$EditCollaboratorResponseImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -131,11 +135,12 @@ class __$$CollaboratorResponseImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$CollaboratorResponseImpl implements _CollaboratorResponse {
-  const _$CollaboratorResponseImpl({required this.status, required this.data});
+class _$EditCollaboratorResponseImpl implements _EditCollaboratorResponse {
+  const _$EditCollaboratorResponseImpl(
+      {required this.status, required this.data});
 
-  factory _$CollaboratorResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CollaboratorResponseImplFromJson(json);
+  factory _$EditCollaboratorResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$EditCollaboratorResponseImplFromJson(json);
 
   @override
   final String status;
@@ -144,14 +149,14 @@ class _$CollaboratorResponseImpl implements _CollaboratorResponse {
 
   @override
   String toString() {
-    return 'CollaboratorResponse(status: $status, data: $data)';
+    return 'EditCollaboratorResponse(status: $status, data: $data)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CollaboratorResponseImpl &&
+            other is _$EditCollaboratorResponseImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.data, data) || other.data == data));
   }
@@ -160,41 +165,40 @@ class _$CollaboratorResponseImpl implements _CollaboratorResponse {
   @override
   int get hashCode => Object.hash(runtimeType, status, data);
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$CollaboratorResponseImplCopyWith<_$CollaboratorResponseImpl>
-      get copyWith =>
-          __$$CollaboratorResponseImplCopyWithImpl<_$CollaboratorResponseImpl>(
-              this, _$identity);
+  _$$EditCollaboratorResponseImplCopyWith<_$EditCollaboratorResponseImpl>
+      get copyWith => __$$EditCollaboratorResponseImplCopyWithImpl<
+          _$EditCollaboratorResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollaboratorResponseImplToJson(
+    return _$$EditCollaboratorResponseImplToJson(
       this,
     );
   }
 }
 
-abstract class _CollaboratorResponse implements CollaboratorResponse {
-  const factory _CollaboratorResponse(
+abstract class _EditCollaboratorResponse implements EditCollaboratorResponse {
+  const factory _EditCollaboratorResponse(
       {required final String status,
-      required final DataResponse data}) = _$CollaboratorResponseImpl;
+      required final DataResponse data}) = _$EditCollaboratorResponseImpl;
 
-  factory _CollaboratorResponse.fromJson(Map<String, dynamic> json) =
-      _$CollaboratorResponseImpl.fromJson;
+  factory _EditCollaboratorResponse.fromJson(Map<String, dynamic> json) =
+      _$EditCollaboratorResponseImpl.fromJson;
 
   @override
   String get status;
   @override
   DataResponse get data;
 
-  /// Create a copy of CollaboratorResponse
+  /// Create a copy of EditCollaboratorResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CollaboratorResponseImplCopyWith<_$CollaboratorResponseImpl>
+  _$$EditCollaboratorResponseImplCopyWith<_$EditCollaboratorResponseImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

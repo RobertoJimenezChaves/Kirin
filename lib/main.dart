@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kirin/config/routing/app_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:kirin/config/theme/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'config/routing/app_router.dart';
+import 'config/theme/theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp(),));

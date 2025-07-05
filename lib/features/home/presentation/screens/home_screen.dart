@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kirin/config/theme/theme.dart';
-import 'package:kirin/features/home/presentation/viewmodel/collaborator_view_model.dart';
-import 'package:kirin/features/home/presentation/widgets/collaborator_grid.dart';
-import 'package:kirin/features/core/presentation/widgets/custom_background.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:kirin/features/core/presentation/widgets/custom_app_bar.dart';
+import 'package:go_router/go_router.dart';
+
+import '../../../../config/theme/theme.dart';
+import '../../../core/presentation/widgets/custom_app_bar.dart';
+import '../../../core/presentation/widgets/custom_background.dart';
+import '../viewmodel/collaborator_view_model.dart';
+import '../widgets/collaborator_grid.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -46,6 +48,12 @@ class HomeScreen extends ConsumerWidget {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          context.push('/add-collaborator');
+        },
       ),
     );
   }

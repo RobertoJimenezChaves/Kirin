@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:kirin/features/core/utils/constants.dart';
-import 'package:kirin/features/home/data/models/collaborator_response.dart';
+
 import 'package:retrofit/http.dart';
+
+import '../../../core/utils/constants.dart';
+import '../models/collaborator_response.dart';
 
 part 'collaborator_datasource.g.dart';
 
@@ -9,7 +11,7 @@ part 'collaborator_datasource.g.dart';
 abstract class CollaboratorDataSource {
   factory CollaboratorDataSource(Dio dio, {String baseUrl}) = _CollaboratorDataSource;
 
-  @GET('/getCollaboratorList')
+  @GET('/get-collaborator-list')
   Future<CollaboratorResponse> getCollaborators();
 
 }
