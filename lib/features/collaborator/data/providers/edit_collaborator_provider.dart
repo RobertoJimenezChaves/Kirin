@@ -3,8 +3,8 @@ import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/providers/dio_provider.dart';
-import '../../data/datasources/edit_collaborator_datasource.dart';
-import '../../data/repositories/edit_collaborator_repository.dart';
+import '../datasources/edit_collaborator_datasource.dart';
+import '../repositories/edit_collaborator_repository_imp.dart';
 import '../../domain/repositories/edit_collaborator_repository.dart';
 
 part 'edit_collaborator_provider.g.dart';

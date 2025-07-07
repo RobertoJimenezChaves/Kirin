@@ -3,7 +3,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/utils/response_status.dart';
 import '../../../home/data/models/collaborator.dart';
-import '../providers/edit_collaborator_provider.dart';
+import '../../data/providers/edit_collaborator_provider.dart';
 
 part 'edit_collaborator_view_model.g.dart';
 

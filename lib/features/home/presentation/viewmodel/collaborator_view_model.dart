@@ -1,7 +1,7 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../data/models/collaborator.dart';
-import '../providers/collaborator_provider.dart';
+import '../../data/providers/collaborator_provider.dart';
 
 part 'collaborator_view_model.g.dart';
 
