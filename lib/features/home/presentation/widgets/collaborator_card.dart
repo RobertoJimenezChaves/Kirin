@@ -1,9 +1,10 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:kirin/config/theme/custom_styles.dart';
-import 'package:kirin/config/theme/custom_text_styles.dart';
-import 'package:kirin/features/home/data/models/collaborator.dart';
+
+import '../../../../config/theme/custom_styles.dart';
+import '../../../../config/theme/custom_text_styles.dart';
+import '../../data/models/collaborator.dart';
+
 
 class CollaboratorCard extends StatelessWidget {
   final Collaborator collaborator;

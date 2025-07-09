@@ -38,4 +38,12 @@ class Validators {
     return null;
   }
 
+  static String? validateRequired(String? value, AppLocalizations localizations) {
+    if (!Validators.isNotEmpty(value)) {
+      return localizations.field_required;
+    }
+    
+    return null;
+  }
+
 }

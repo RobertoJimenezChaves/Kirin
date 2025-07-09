@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:kirin/config/theme/custom_styles.dart';
-import 'package:kirin/config/theme/theme.dart';
-import 'package:kirin/features/core/presentation/widgets/custom_background.dart';
-import 'package:kirin/features/core/presentation/widgets/custom_app_bar.dart';
-import 'package:kirin/features/core/utils/validators.dart';
+
+import '../../../../config/theme/custom_styles.dart';
+import '../../../../config/theme/theme.dart';
+import '../../../core/presentation/widgets/custom_app_bar.dart';
+import '../../../core/presentation/widgets/custom_background.dart';
+import '../../../core/utils/validators.dart';
+
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -20,6 +22,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   bool _obscureText = true;
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -86,14 +95,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           validator: (value) => Validators.validatePassword(value, localizations),
                         ),
                         const SizedBox(height: 50),
-
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 16.0),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                            ),
                             onPressed: () {
                               if (_formKey.currentState!.validate()) {
                                 // TODO: implementar lógica de login
