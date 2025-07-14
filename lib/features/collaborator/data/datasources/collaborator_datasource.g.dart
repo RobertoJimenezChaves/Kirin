@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'edit_collaborator_datasource.dart';
+part of 'collaborator_datasource.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,17 +8,45 @@ part of 'edit_collaborator_datasource.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _EditCollaboratorDataSource implements EditCollaboratorDataSource {
-  _EditCollaboratorDataSource(
+class _CollaboratorDataSource implements CollaboratorDataSource {
+  _CollaboratorDataSource(
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'http://192.168.86.250:3001';
+    baseUrl ??= 'http://192.168.86.246:3001';
   }
 
   final Dio _dio;
 
   String? baseUrl;
+
+  @override
+  Future<AddCollaboratorResponse> addCollaborator(
+      {required Collaborator collaborator}) async {
+    const _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final Map<String, dynamic>? _data = null;
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<AddCollaboratorResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              '/add-collaborator',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final value = AddCollaboratorResponse.fromJson(_result.data!);
+    return value;
+  }
 
   @override
   Future<EditCollaboratorResponse> editCollaborator(
@@ -35,7 +63,7 @@ class _EditCollaboratorDataSource implements EditCollaboratorDataSource {
     )
             .compose(
               _dio.options,
-              '/add-collaborator',
+              '/edit-collaborator',
               queryParameters: queryParameters,
               data: _data,
             )

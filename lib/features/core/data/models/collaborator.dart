@@ -1,5 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../../utils/collaborator_status.dart';
+
 part 'collaborator.freezed.dart';
 part 'collaborator.g.dart';
 
@@ -26,7 +28,7 @@ class Collaborator with _$Collaborator {
       initialBalance: initialBalance,
       registerDate: DateTime.now(),
       requestedDays: 0,
-      statusCode: 'A',
+      statusCode: CollaboratorStatus.active.value,
       availableDays: 0,
     );
   }

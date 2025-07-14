@@ -31,12 +31,16 @@ final lightTheme = ThemeData(
     const CustomTextStyles(
       letterAvatarStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
       text18Style: TextStyle(fontSize: 18),
+      text16Style: TextStyle(fontSize: 16),
     ),
     CustomStyles(
       boxDecorationStyle: BoxDecoration(
         color: const Color.fromARGB(179, 255, 253, 253),
         borderRadius: BorderRadius.circular(20),
       ),
+      backgroundColor: const Color.fromARGB(179, 255, 253, 253),
+      selectedItemColor: const Color.fromARGB(255, 253, 95, 148),
+      unselectedItemColor: const Color.fromARGB(255, 92, 91, 91),
     ),
   ],
 );
@@ -61,12 +65,16 @@ final darkTheme = ThemeData(
     const CustomTextStyles(
       letterAvatarStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
       text18Style: TextStyle(fontSize: 18),
+      text16Style: TextStyle(fontSize: 16),
     ),
     CustomStyles(
       boxDecorationStyle: BoxDecoration(
         color: const Color.fromRGBO(62, 66, 107, 0.7),
         borderRadius: BorderRadius.circular(20),
       ),
+      backgroundColor: const Color.fromRGBO(62, 66, 107, 0.7),
+      selectedItemColor: const Color.fromARGB(255, 253, 95, 148),
+      unselectedItemColor: Colors.white54,
     ),
   ],
 );

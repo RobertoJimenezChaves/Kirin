@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import '../../data/models/collaborator.dart';
+import '../../../core/data/models/collaborator.dart';
 import 'collaborator_card.dart';
 
 class CollaboratorGrid extends StatelessWidget {

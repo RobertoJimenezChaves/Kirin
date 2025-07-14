@@ -46,4 +46,14 @@ class Validators {
     return null;
   }
 
+  static String? validateDays(String? value, AppLocalizations localizations) {
+    if (!Validators.isNotEmpty(value)) {
+      return localizations.field_required;
+    }
+    if (int.tryParse(value!)! <= 0) {
+      return localizations.days_invalid;
+    }
+    return null;
+  }
+
 }

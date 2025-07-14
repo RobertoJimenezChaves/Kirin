@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "f12e7aef-a336-4395-ac67-8ff8a4500663",
-          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"collaboratorsList\": [\n            {\n                \"id\": 1,\n                \"name\": \"Toji Fushiguro\",\n                \"nameLetter\": \"TF\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Sasuke Uchiha\",\n                \"nameLetter\": \"SU\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Kyojuro Rengoku\",\n                \"nameLetter\": \"KR\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Ash Ketchum\",\n                \"nameLetter\": \"AK\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Satoru Gojou\",\n                \"nameLetter\": \"SG\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Sung Jin Woo\",\n                \"nameLetter\": \"SJ\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Ken Takakura\",\n                \"nameLetter\": \"KT\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            }\n        ]\n    }\n}",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"collaboratorsList\": [\n            {\n                \"id\": 1,\n                \"name\": \"Toji Fushiguro\",\n                \"nameLetter\": \"TF\",\n                \"workStartDate\": \"2019-08-27T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Sasuke Uchiha\",\n                \"nameLetter\": \"SU\",\n                \"workStartDate\": \"2012-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"INA\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Kyojuro Rengoku\",\n                \"nameLetter\": \"KR\",\n                \"workStartDate\": \"2019-02-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Ash Ketchum\",\n                \"nameLetter\": \"AK\",\n                \"workStartDate\": \"2020-01-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Satoru Gojou\",\n                \"nameLetter\": \"SG\",\n                \"workStartDate\": \"2021-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Sung Jin Woo\",\n                \"nameLetter\": \"SJ\",\n                \"workStartDate\": \"2019-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Ken Takakura\",\n                \"nameLetter\": \"KT\",\n                \"workStartDate\": \"2024-08-01T00:00:00\",\n                \"initialBalance\": 0,\n                \"registerDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 0,\n                \"statusCode\": \"ACT\",\n                \"availableDays\": 6\n            }\n        ]\n    }\n}",
           "latency": 1000,
           "statusCode": 200,
           "label": "",
@@ -98,6 +98,207 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "f80f2812-f3f5-4617-a3a6-97aa51028c3b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "getEmployeeList",
+      "responses": [
+        {
+          "uuid": "4a5c58bb-9c49-4a7e-b0b4-c29c2dc20716",
+          "body": "{\n    \"employeeList\": [\n        {\n            \"id\": 1,\n            \"name\": \"Toji Fushiguro\",\n            \"nameLetter\": \"TF\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Sasuke Uchiha\",\n            \"nameLetter\": \"SU\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Kyojuro Rengoku\",\n            \"nameLetter\": \"KR\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ash Ketchum\",\n            \"nameLetter\": \"AK\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Satoru Gojou\",\n            \"nameLetter\": \"SG\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Sung Jin Woo\",\n            \"nameLetter\": \"SJ\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ken Takakura\",\n            \"nameLetter\": \"KT\",\n            \"workStartDate\": \"2019-08-01T00:00:00\",\n            \"initialBalance\": 0,\n            \"registerDate\": \"2019-08-01T00:00:00\",\n            \"requestedDays\": 0,\n            \"statusCode\": \"ACTIVE\",\n            \"availableDays\": 6\n        }\n    ]\n}",
+          "latency": 1000,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "a0329fe0-1448-4b56-83d8-6ba1dbc1aebb",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "edit-collaborator",
+      "responses": [
+        {
+          "uuid": "45f397fa-189e-44bd-b5e8-87add8e20972",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n      \"id\": 0\n    }\n}",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "8f33b526-c114-46d7-a0d0-13d66d6246f0",
+          "body": "{\n    \"success\": false\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "9f63ffef-f517-41d3-9723-06ff80519699",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "add-free-time",
+      "responses": [
+        {
+          "uuid": "056f1796-dbed-43a4-8c71-2d9c3fed78ef",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n      \"id\": 0\n    }\n}",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b00f7698-31d9-44fe-b188-0b14fa9889fb",
+          "body": "{\n    \"success\": false\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "cc97c2a3-1d38-456b-9732-4332849d598c",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "get-free-time-list",
+      "responses": [
+        {
+          "uuid": "dfe63f20-09d9-47f4-9e94-f4c6866fcda8",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"freeTimeList\": [\n            {\n                \"id\": 1,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 2\n            },\n            {\n                \"id\": 2,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 3\n            },\n            {\n                \"id\": 3,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 5\n            },\n            {\n                \"id\": 4,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 2\n            },\n            {\n                \"id\": 5,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 3\n            },\n            {\n                \"id\": 6,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 7\n            }\n        ]\n    }\n}",
+          "latency": 1000,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "23dc96c2-96e8-49e0-8dd1-ffea345033ab",
+          "body": "{\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"freeTimeList\": [\n            {\n                \"id\": 1,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 2\n            },\n            {\n                \"id\": 2,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 3\n            },\n            {\n                \"id\": 3,\n                \"collaboratorId\": 1,\n                \"initDate\": \"2019-08-27T00:00:00\",\n                \"endDate\": \"2019-08-01T00:00:00\",\n                \"requestedDays\": 5\n            }\n        ]\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -108,6 +309,22 @@
     {
       "type": "route",
       "uuid": "985ad5ff-911c-40c9-a824-5a025b4642da"
+    },
+    {
+      "type": "route",
+      "uuid": "f80f2812-f3f5-4617-a3a6-97aa51028c3b"
+    },
+    {
+      "type": "route",
+      "uuid": "a0329fe0-1448-4b56-83d8-6ba1dbc1aebb"
+    },
+    {
+      "type": "route",
+      "uuid": "9f63ffef-f517-41d3-9723-06ff80519699"
+    },
+    {
+      "type": "route",
+      "uuid": "cc97c2a3-1d38-456b-9732-4332849d598c"
     }
   ],
   "proxyMode": false,
