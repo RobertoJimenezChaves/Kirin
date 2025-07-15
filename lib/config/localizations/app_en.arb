@@ -13,5 +13,18 @@
     "field_required":"Field is required",
     "work_start_date": "Work start date",
     "initial_balance": "Initial balance",
-    "add": "Add"
+    "add": "Add",
+    "available_days": "Days Available",
+    "spent_days":"Days Spent",
+    "save":"Save",
+    "active": "Active",
+    "collaborator_save_success":"Collaborator saved successfully",
+    "time_request": "Time Request",
+    "init_date":"Init Date",
+    "end_date":"End Date",
+    "days":"Days",
+    "days_invalid":"Days must be greater than 0",
+    "free_time_saved":"Free time saved successfully",
+    "free_time_list":"Free time",
+    "requested_days":"Requested days"
 }

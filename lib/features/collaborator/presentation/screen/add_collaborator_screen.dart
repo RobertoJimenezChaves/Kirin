@@ -5,13 +5,13 @@ import 'package:intl/intl.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../../../../config/theme/custom_styles.dart';
+import '../../../core/data/models/collaborator.dart';
 import '../../../core/presentation/widgets/custom_app_bar.dart';
 import '../../../core/presentation/widgets/custom_background.dart';
 import '../../../core/utils/constants.dart';
 import '../../../core/utils/validators.dart';
-import '../../../home/data/models/collaborator.dart';
 import '../../../home/presentation/viewmodel/collaborator_view_model.dart';
-import '../viewmodel/edit_collaborator_view_model.dart';
+import '../viewmodel/add_collaborator_view_model.dart';
 
 class AddCollaboratorScreen extends ConsumerStatefulWidget {
   const AddCollaboratorScreen({super.key});
@@ -56,7 +56,7 @@ class _AddCollaboratorScreenState extends ConsumerState<AddCollaboratorScreen> {
         initialBalance: int.parse(_initialBalanceController.text),
       );
 
-      final response = await ref.read(editCollaboratorViewModelProvider.notifier).editCollaborator(collaborator);
+      final response = await ref.read(addCollaboratorViewModelProvider.notifier).addCollaborator(collaborator);
 
       if (!mounted) return;
 

@@ -13,5 +13,18 @@
     "field_required":"Campo requerido",
     "work_start_date": "Inicio laboral",
     "initial_balance": "Saldo inicial",
-    "add": "Agregar"
+    "add": "Agregar",
+    "available_days": "Días Disponibles",
+    "spent_days":"Días Gastados",
+    "save":"Guardar",
+    "active": "Activo",
+    "collaborator_save_success":"Colaborador guardado con éxito",
+    "time_request": "Solicitud de tiempo",
+    "init_date":"Fecha inicio",
+    "end_date":"Fecha fin",
+    "days":"Días",
+    "days_invalid":"Los días deben ser mayores que 0",
+    "free_time_saved":"Tiempo libre guardado con éxito",
+    "free_time_list":"Tiempo libre",
+    "requested_days":"Días solicitados"
 }

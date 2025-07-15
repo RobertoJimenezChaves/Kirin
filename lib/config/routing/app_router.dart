@@ -3,6 +3,8 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/collaborator/presentation/screen/add_collaborator_screen.dart';
+import '../../features/collaborator/presentation/screen/detail_main_screen.dart';
+import '../../features/core/data/models/collaborator.dart';
 import '../../features/home/presentation/screens/home_screen.dart';
 import '../../features/login/presentation/screens/login_screen.dart';
 
@@ -30,6 +32,14 @@ GoRouter appRouter(Ref ref) {
         path: '/add-collaborator',
         builder: (context, state) {
           return const AddCollaboratorScreen();
+        },
+      ),
+      GoRoute(
+        path: '/collaborator-detail',
+        name: 'collaboratorDetail',
+        builder: (context, state) {
+          final collaborator = state.extra as Collaborator;
+          return DetailMainScreen(collaborator);
         },
       ),
     ],
