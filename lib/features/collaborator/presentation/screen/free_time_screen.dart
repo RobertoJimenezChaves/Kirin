@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:kirin/features/collaborator/presentation/viewmodel/free_time_list_view_model.dart';
 import '../../../../config/theme/custom_styles.dart';
 import '../../../core/presentation/widgets/custom_app_bar.dart';
 import '../../../core/presentation/widgets/custom_background.dart';
@@ -10,6 +9,7 @@ import '../../../core/utils/constants.dart';
 import '../../../core/utils/validators.dart';
 import '../../data/models/free_time.dart';
 import '../viewmodel/add_free_time_view_model.dart';
+import '../viewmodel/free_time_list_view_model.dart';
 
 class FreeTimeScreen extends ConsumerStatefulWidget {
   final String name;
@@ -115,8 +115,7 @@ class _FreeTimeScreenState extends ConsumerState<FreeTimeScreen> {
         requestedDays: int.parse(_requestDaysController.text),
       );
 
-      final viewModel = ref.read(addFreeTimeViewModelProvider.notifier);
-      final result = await viewModel.addFreeTime(freeTime);
+      final result = await ref.read(addFreeTimeProvider(freeTime).future);
 
       if (!mounted) return;
 

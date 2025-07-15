@@ -7,7 +7,7 @@ part of 'free_time_provider.dart';
 // **************************************************************************
 
 String _$freeTimeDataSourceHash() =>
-    r'74da93c19d088b8b3543630315996574fe6ae6e6';
+    r'959af6196a4dbc23717d7fc66e30a712f7900fe6';
 
 /// See also [freeTimeDataSource].
 @ProviderFor(freeTimeDataSource)

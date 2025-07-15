@@ -56,7 +56,7 @@ class _AddCollaboratorScreenState extends ConsumerState<AddCollaboratorScreen> {
         initialBalance: int.parse(_initialBalanceController.text),
       );
 
-      final response = await ref.read(addCollaboratorViewModelProvider.notifier).addCollaborator(collaborator);
+      final response = await ref.read(addCollaboratorProvider(collaborator).future);
 
       if (!mounted) return;
 

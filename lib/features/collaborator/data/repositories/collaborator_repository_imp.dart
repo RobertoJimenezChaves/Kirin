@@ -4,7 +4,7 @@
 import '../../../core/data/models/collaborator.dart';
 import '../../domain/repositories/collaborator_repository.dart';
 import '../datasources/collaborator_datasource.dart';
-import '../models/collaborator_response.dart';
+import '../models/save_collaborator_response.dart';
 
 class CollaboratorRepositoryImp implements CollaboratorRepository {
   final CollaboratorDataSource dataSource;
@@ -12,12 +12,12 @@ class CollaboratorRepositoryImp implements CollaboratorRepository {
   CollaboratorRepositoryImp(this.dataSource);
 
   @override
-  Future<AddCollaboratorResponse> addCollaborator({required Collaborator collaborator}) async {
+  Future<SaveCollaboratorResponse> addCollaborator({required Collaborator collaborator}) async {
     return await dataSource.addCollaborator(collaborator: collaborator);
   }
 
   @override
-  Future<EditCollaboratorResponse> editCollaborator({required Collaborator collaborator}) async {
+  Future<SaveCollaboratorResponse> editCollaborator({required Collaborator collaborator}) async {
     return await dataSource.editCollaborator(collaborator: collaborator);
   }
 }

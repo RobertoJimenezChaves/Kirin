@@ -7,7 +7,7 @@ part of 'collaborator_provider.dart';
 // **************************************************************************
 
 String _$collaboratorDataSourceHash() =>
-    r'f5b8a59c18583a4fb88beedda8d3e08500bba0e9';
+    r'e82bd875b947574a935490194e38b7f760c4f98a';
 
 /// See also [collaboratorDataSource].
 @ProviderFor(collaboratorDataSource)

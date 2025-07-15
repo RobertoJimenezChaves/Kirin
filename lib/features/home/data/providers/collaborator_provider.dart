@@ -10,7 +10,10 @@ import '../../domain/repositories/collaborator_repository.dart';
 part 'collaborator_provider.g.dart';
 
 @riverpod
-CollaboratorDataSource collaboratorDataSource(Ref ref) => CollaboratorDataSource(ref.watch(dioProvider));
+CollaboratorDataSource collaboratorDataSource(Ref ref) {
+  final dio = ref.watch(dioProvider);
+  return CollaboratorDataSource(dio);
+}
 
 @riverpod
 CollaboratorRepository collaboratorRepository(Ref ref) {

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kirin/features/collaborator/presentation/screen/collaborator_detail_screen.dart';
-import 'package:kirin/features/core/data/models/collaborator.dart';
 
 import '../../../../config/theme/custom_styles.dart';
+import '../../../core/data/models/collaborator.dart';
 import '../../../core/utils/collaborator_status.dart';
 import '../viewmodel/collaborator_detail_view_model.dart';
 import '../viewmodel/navigation_view_model.dart';
+import 'collaborator_detail_screen.dart';
 import 'free_time_list_screen.dart';
 import 'free_time_screen.dart';
 
@@ -23,7 +23,6 @@ class DetailMainScreen extends ConsumerWidget {
 
     final viewModel = collaboratorDetailViewModelProvider(collaborator);
     final collaboratorViewModel = ref.watch(viewModel);
-    //final isActive = ref.watch(viewModel.select((vm) => vm.statusCode == CollaboratorStatus.active.value));
     final isActive = collaboratorViewModel.statusCode == CollaboratorStatus.active.value;
 
     final List<Widget> screens = [
