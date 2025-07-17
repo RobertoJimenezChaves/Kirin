@@ -11,11 +11,10 @@ final lightTheme = ThemeData(
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.transparent,
     elevation: 0,
-    foregroundColor: Color.fromARGB(255, 255, 233, 237),
+    foregroundColor: Color.fromARGB(255, 1, 1, 1),
   ),
-  //0xFF6A1B9A
   iconButtonTheme: const IconButtonThemeData(
-    style: ButtonStyle(iconColor: WidgetStatePropertyAll<Color>(Color.fromARGB(255, 92, 91, 91))),
+    style: ButtonStyle(iconColor: WidgetStatePropertyAll<Color>(Color.fromARGB(255, 1, 1, 1))),
   ),
   cardTheme: const CardTheme(
     color: Color.fromARGB(255, 62, 66, 107),
@@ -38,6 +37,13 @@ final lightTheme = ThemeData(
         color: const Color.fromARGB(179, 255, 253, 253),
         borderRadius: BorderRadius.circular(20),
       ),
+      drawerHeaderDecorationStyle: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Color.fromARGB(255, 255, 255, 255), Color.fromARGB(255, 253, 95, 148)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+              ),
       backgroundColor: const Color.fromARGB(179, 255, 253, 253),
       selectedItemColor: const Color.fromARGB(255, 253, 95, 148),
       unselectedItemColor: const Color.fromARGB(255, 92, 91, 91),
@@ -71,6 +77,13 @@ final darkTheme = ThemeData(
       boxDecorationStyle: BoxDecoration(
         color: const Color.fromRGBO(62, 66, 107, 0.7),
         borderRadius: BorderRadius.circular(20),
+      ),
+      drawerHeaderDecorationStyle: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Color(0xFF536976), Color.fromRGBO(62, 66, 107, 0.7)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
       ),
       backgroundColor: const Color.fromRGBO(62, 66, 107, 0.7),
       selectedItemColor: const Color.fromARGB(255, 253, 95, 148),

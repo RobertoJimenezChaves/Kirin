@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,7 +9,7 @@ import '../../../../config/theme/theme.dart';
 import '../../../core/presentation/widgets/custom_app_bar.dart';
 import '../../../core/presentation/widgets/custom_background.dart';
 import '../../../core/utils/validators.dart';
-
+import '../viewmodel/auth_view_model.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -28,6 +29,25 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     _emailController.dispose();
     _passwordController.dispose();
     super.dispose();
+  }
+
+  void _submit(AppLocalizations localizations) async {
+    if (_formKey.currentState!.validate()) {
+      User? user;
+      try{
+        user = await ref.read(loginProvider(_emailController.text.trim(), _passwordController.text.trim()).future);
+      } catch (e) {
+        user = null;
+      }
+
+      if (!mounted) return;
+
+      if (user != null) {
+        context.go('/home');
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(localizations.login_fail)));
+      }
+    }
   }
 
   @override
@@ -98,12 +118,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                            onPressed: () {
-                              if (_formKey.currentState!.validate()) {
-                                // TODO: implementar lógica de login
-                                context.go('/home');
-                              }
-                            },
+                            onPressed: () => _submit(localizations),
                             child: Text(localizations.login.toUpperCase()),
                           ),
                         ),

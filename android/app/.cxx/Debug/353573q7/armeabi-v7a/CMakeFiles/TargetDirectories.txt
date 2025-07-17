@@ -1,0 +1,2 @@
+/Users/roberto.jimenezch/Documents/FuentesApp/Flutter3/Kirin/android/app/.cxx/Debug/353573q7/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/roberto.jimenezch/Documents/FuentesApp/Flutter3/Kirin/android/app/.cxx/Debug/353573q7/armeabi-v7a/CMakeFiles/edit_cache.dir

@@ -8,6 +8,7 @@ import '../../../core/presentation/widgets/custom_app_bar.dart';
 import '../../../core/presentation/widgets/custom_background.dart';
 import '../viewmodel/collaborator_view_model.dart';
 import '../widgets/collaborator_grid.dart';
+import '../widgets/home_drawer.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -21,6 +22,7 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
+      drawer: const HomeDrawer(),
       appBar: CustomAppBar(
         title: Text(localizations.collaborators),
         actions: [
