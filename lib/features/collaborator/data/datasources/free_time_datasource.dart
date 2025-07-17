@@ -2,9 +2,9 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:kirin/features/core/utils/constants.dart';
 import 'package:retrofit/http.dart';
 
+import '../../../core/utils/constants.dart';
 import '../models/free_time.dart';
 import '../models/free_time_response.dart';
 

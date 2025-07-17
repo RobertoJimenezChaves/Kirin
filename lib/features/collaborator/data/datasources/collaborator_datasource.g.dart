@@ -21,14 +21,14 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
   String? baseUrl;
 
   @override
-  Future<AddCollaboratorResponse> addCollaborator(
+  Future<SaveCollaboratorResponse> addCollaborator(
       {required Collaborator collaborator}) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<AddCollaboratorResponse>(Options(
+        _setStreamType<SaveCollaboratorResponse>(Options(
       method: 'POST',
       headers: _headers,
       extra: _extra,
@@ -44,19 +44,19 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final value = AddCollaboratorResponse.fromJson(_result.data!);
+    final value = SaveCollaboratorResponse.fromJson(_result.data!);
     return value;
   }
 
   @override
-  Future<EditCollaboratorResponse> editCollaborator(
+  Future<SaveCollaboratorResponse> editCollaborator(
       {required Collaborator collaborator}) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<EditCollaboratorResponse>(Options(
+        _setStreamType<SaveCollaboratorResponse>(Options(
       method: 'POST',
       headers: _headers,
       extra: _extra,
@@ -72,7 +72,7 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final value = EditCollaboratorResponse.fromJson(_result.data!);
+    final value = SaveCollaboratorResponse.fromJson(_result.data!);
     return value;
   }
 

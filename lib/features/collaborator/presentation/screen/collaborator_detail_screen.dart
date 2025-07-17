@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
-import 'package:kirin/features/collaborator/presentation/widgets/custom_circle.dart';
 
 import '../../../../config/theme/custom_styles.dart';
 import '../../../../config/theme/custom_text_styles.dart';
@@ -15,6 +14,7 @@ import '../../../core/utils/validators.dart';
 import '../../../home/presentation/viewmodel/collaborator_view_model.dart';
 import '../viewmodel/collaborator_detail_view_model.dart';
 import '../viewmodel/active_view_model.dart';
+import '../widgets/custom_circle.dart';
 
 class CollaboratorDetailScreen extends ConsumerStatefulWidget {
   final Collaborator collaboratorVM;

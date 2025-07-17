@@ -9,8 +9,13 @@ import '../repositories/free_time_repository_imp.dart';
 
 part 'free_time_provider.g.dart';
 
+
+
 @riverpod
-FreeTimeDataSource freeTimeDataSource(Ref ref) => FreeTimeDataSource(ref.watch(dioProvider));
+FreeTimeDataSource freeTimeDataSource(Ref ref) {
+  final dio = ref.watch(dioProvider);
+  return FreeTimeDataSource(dio);
+}
 
 @riverpod
 FreeTimeRepository freeTimeRepository(Ref ref) {

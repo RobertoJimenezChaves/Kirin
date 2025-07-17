@@ -7,7 +7,7 @@ part of 'collaborator_view_model.dart';
 // **************************************************************************
 
 String _$collaboratorViewModelHash() =>
-    r'cd2767280e3a12ad3a2c92417d56db7d90e08444';
+    r'2cfef6c7fc31b02c9c110465fd07bc1f40c53b5a';
 
 /// See also [CollaboratorViewModel].
 @ProviderFor(CollaboratorViewModel)
