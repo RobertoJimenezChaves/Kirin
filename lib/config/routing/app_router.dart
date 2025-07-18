@@ -6,6 +6,7 @@ import '../../features/collaborator/presentation/screen/add_collaborator_screen.
 import '../../features/collaborator/presentation/screen/detail_main_screen.dart';
 import '../../features/core/data/models/collaborator.dart';
 import '../../features/home/presentation/screens/home_screen.dart';
+import '../../features/home/presentation/screens/profile_screen.dart';
 import '../../features/login/presentation/screens/login_screen.dart';
 
 part 'app_router.g.dart';
@@ -26,6 +27,12 @@ GoRouter appRouter(Ref ref) {
         path: '/home',
         builder: (context, state) {
           return const HomeScreen();
+        },
+      ),
+      GoRoute(
+        path: '/profile',
+        builder: (context, state) {
+          return const ProfileScreen();
         },
       ),
       GoRoute(

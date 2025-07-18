@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "860828320943",
+    "project_id": "kirin-784a1",
+    "storage_bucket": "kirin-784a1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860828320943:android:72e8d43ca416e480b9405a",
+        "android_client_info": {
+          "package_name": "com.example.kirin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDsCahOccjGoyV6PXeIHpwEUcvJXGKmHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

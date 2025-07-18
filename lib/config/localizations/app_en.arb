@@ -26,5 +26,9 @@
     "days_invalid":"Days must be greater than 0",
     "free_time_saved":"Free time saved successfully",
     "free_time_list":"Free time",
-    "requested_days":"Requested days"
+    "requested_days":"Requested days",
+    "profile":"Profile",
+    "logout": "Logout",
+    "under_construction": "Widget under construction",
+    "login_fail": "Incorrect credentials"
 }
