@@ -6,11 +6,19 @@ import '../../data/providers/auth_provider.dart';
 part 'auth_view_model.g.dart';
 
 @riverpod
-Future<User?> login(Ref ref, String email, String password) async {
-  return await ref.watch(authRepositoryProvider).login(email, password);
-}
+class AuthViewModel extends _$AuthViewModel {
 
-@riverpod
-Future<void> logout(Ref ref) async {
-  await ref.watch(authRepositoryProvider).logout();
+  @override
+  AsyncLoading build() {
+    return const AsyncLoading();
+  }
+
+  Future<User?> login(String email, String password) async {
+    return await ref.read(authRepositoryProvider).login(email, password);
+  }
+
+  Future<void> logout() async {
+    await ref.read(authRepositoryProvider).logout();
+    state = null;
+  }
 }
