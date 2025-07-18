@@ -64,7 +64,7 @@ class HomeDrawer extends ConsumerWidget {
             leading: const Icon(Icons.logout),
             title: Text(localizations.logout),
             onTap: () async {
-              await ref.read(logoutProvider.future);
+              await ref.read(authViewModelProvider.notifier).logout();
               if (context.mounted) {
                 context.go('/login');
               }
