@@ -33,12 +33,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   void _submit(AppLocalizations localizations) async {
     if (_formKey.currentState!.validate()) {
-      User? user;
-      try{
-        user = await ref.read(loginProvider(_emailController.text.trim(), _passwordController.text.trim()).future);
-      } catch (e) {
-        user = null;
-      }
+      final User? user = await ref.read(authViewModelProvider.notifier).login( _emailController.text.trim(), _passwordController.text.trim());
 
       if (!mounted) return;
 
