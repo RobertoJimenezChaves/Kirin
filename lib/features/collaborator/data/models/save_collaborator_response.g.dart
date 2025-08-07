@@ -6,16 +6,13 @@ part of 'save_collaborator_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$SaveCollaboratorResponseImpl _$$SaveCollaboratorResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$SaveCollaboratorResponseImpl(
-      status: json['status'] as String,
-      data: json['data'],
-    );
+_SaveCollaboratorResponse _$SaveCollaboratorResponseFromJson(
+  Map<String, dynamic> json,
+) => _SaveCollaboratorResponse(
+  status: json['status'] as String,
+  data: json['data'],
+);
 
-Map<String, dynamic> _$$SaveCollaboratorResponseImplToJson(
-        _$SaveCollaboratorResponseImpl instance) =>
-    <String, dynamic>{
-      'status': instance.status,
-      'data': instance.data,
-    };
+Map<String, dynamic> _$SaveCollaboratorResponseToJson(
+  _SaveCollaboratorResponse instance,
+) => <String, dynamic>{'status': instance.status, 'data': instance.data};

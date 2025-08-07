@@ -34,9 +34,7 @@ abstract class _$CollaboratorDetailViewModel
     extends BuildlessAutoDisposeNotifier<Collaborator> {
   late final Collaborator selectedCollaborator;
 
-  Collaborator build(
-    Collaborator selectedCollaborator,
-  );
+  Collaborator build(Collaborator selectedCollaborator);
 }
 
 /// See also [CollaboratorDetailViewModel].
@@ -49,21 +47,15 @@ class CollaboratorDetailViewModelFamily extends Family<Collaborator> {
   const CollaboratorDetailViewModelFamily();
 
   /// See also [CollaboratorDetailViewModel].
-  CollaboratorDetailViewModelProvider call(
-    Collaborator selectedCollaborator,
-  ) {
-    return CollaboratorDetailViewModelProvider(
-      selectedCollaborator,
-    );
+  CollaboratorDetailViewModelProvider call(Collaborator selectedCollaborator) {
+    return CollaboratorDetailViewModelProvider(selectedCollaborator);
   }
 
   @override
   CollaboratorDetailViewModelProvider getProviderOverride(
     covariant CollaboratorDetailViewModelProvider provider,
   ) {
-    return call(
-      provider.selectedCollaborator,
-    );
+    return call(provider.selectedCollaborator);
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -83,25 +75,28 @@ class CollaboratorDetailViewModelFamily extends Family<Collaborator> {
 
 /// See also [CollaboratorDetailViewModel].
 class CollaboratorDetailViewModelProvider
-    extends AutoDisposeNotifierProviderImpl<CollaboratorDetailViewModel,
-        Collaborator> {
+    extends
+        AutoDisposeNotifierProviderImpl<
+          CollaboratorDetailViewModel,
+          Collaborator
+        > {
   /// See also [CollaboratorDetailViewModel].
-  CollaboratorDetailViewModelProvider(
-    Collaborator selectedCollaborator,
-  ) : this._internal(
-          () => CollaboratorDetailViewModel()
-            ..selectedCollaborator = selectedCollaborator,
-          from: collaboratorDetailViewModelProvider,
-          name: r'collaboratorDetailViewModelProvider',
-          debugGetCreateSourceHash:
-              const bool.fromEnvironment('dart.vm.product')
-                  ? null
-                  : _$collaboratorDetailViewModelHash,
-          dependencies: CollaboratorDetailViewModelFamily._dependencies,
-          allTransitiveDependencies:
-              CollaboratorDetailViewModelFamily._allTransitiveDependencies,
-          selectedCollaborator: selectedCollaborator,
-        );
+  CollaboratorDetailViewModelProvider(Collaborator selectedCollaborator)
+    : this._internal(
+        () =>
+            CollaboratorDetailViewModel()
+              ..selectedCollaborator = selectedCollaborator,
+        from: collaboratorDetailViewModelProvider,
+        name: r'collaboratorDetailViewModelProvider',
+        debugGetCreateSourceHash:
+            const bool.fromEnvironment('dart.vm.product')
+                ? null
+                : _$collaboratorDetailViewModelHash,
+        dependencies: CollaboratorDetailViewModelFamily._dependencies,
+        allTransitiveDependencies:
+            CollaboratorDetailViewModelFamily._allTransitiveDependencies,
+        selectedCollaborator: selectedCollaborator,
+      );
 
   CollaboratorDetailViewModelProvider._internal(
     super._createNotifier, {
@@ -119,9 +114,7 @@ class CollaboratorDetailViewModelProvider
   Collaborator runNotifierBuild(
     covariant CollaboratorDetailViewModel notifier,
   ) {
-    return notifier.build(
-      selectedCollaborator,
-    );
+    return notifier.build(selectedCollaborator);
   }
 
   @override
@@ -142,7 +135,7 @@ class CollaboratorDetailViewModelProvider
 
   @override
   AutoDisposeNotifierProviderElement<CollaboratorDetailViewModel, Collaborator>
-      createElement() {
+  createElement() {
     return _CollaboratorDetailViewModelProviderElement(this);
   }
 
@@ -170,13 +163,18 @@ mixin CollaboratorDetailViewModelRef
 }
 
 class _CollaboratorDetailViewModelProviderElement
-    extends AutoDisposeNotifierProviderElement<CollaboratorDetailViewModel,
-        Collaborator> with CollaboratorDetailViewModelRef {
+    extends
+        AutoDisposeNotifierProviderElement<
+          CollaboratorDetailViewModel,
+          Collaborator
+        >
+    with CollaboratorDetailViewModelRef {
   _CollaboratorDetailViewModelProviderElement(super.provider);
 
   @override
   Collaborator get selectedCollaborator =>
       (origin as CollaboratorDetailViewModelProvider).selectedCollaborator;
 }
+
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

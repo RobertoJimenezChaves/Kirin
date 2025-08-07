@@ -12,12 +12,15 @@ String _$freeTimeListViewModelHash() =>
 /// See also [FreeTimeListViewModel].
 @ProviderFor(FreeTimeListViewModel)
 final freeTimeListViewModelProvider = AutoDisposeAsyncNotifierProvider<
-    FreeTimeListViewModel, List<FreeTime>>.internal(
+  FreeTimeListViewModel,
+  List<FreeTime>
+>.internal(
   FreeTimeListViewModel.new,
   name: r'freeTimeListViewModelProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$freeTimeListViewModelHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$freeTimeListViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

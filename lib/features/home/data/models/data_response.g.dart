@@ -6,14 +6,13 @@ part of 'data_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$DataResponseImpl _$$DataResponseImplFromJson(Map<String, dynamic> json) =>
-    _$DataResponseImpl(
-      collaboratorsList: (json['collaboratorsList'] as List<dynamic>)
-          .map((e) => Collaborator.fromJson(e as Map<String, dynamic>))
-          .toList(),
+_DataResponse _$DataResponseFromJson(Map<String, dynamic> json) =>
+    _DataResponse(
+      collaboratorsList:
+          (json['collaboratorsList'] as List<dynamic>)
+              .map((e) => Collaborator.fromJson(e as Map<String, dynamic>))
+              .toList(),
     );
 
-Map<String, dynamic> _$$DataResponseImplToJson(_$DataResponseImpl instance) =>
-    <String, dynamic>{
-      'collaboratorsList': instance.collaboratorsList,
-    };
+Map<String, dynamic> _$DataResponseToJson(_DataResponse instance) =>
+    <String, dynamic>{'collaboratorsList': instance.collaboratorsList};

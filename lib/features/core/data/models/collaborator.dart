@@ -6,7 +6,7 @@ part 'collaborator.freezed.dart';
 part 'collaborator.g.dart';
 
 @freezed
-class Collaborator with _$Collaborator {
+abstract class Collaborator with _$Collaborator {
   const factory Collaborator({
     required int id,
     required String name,

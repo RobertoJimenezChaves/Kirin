@@ -39,21 +39,15 @@ class AddFreeTimeFamily extends Family<AsyncValue<FreeTime?>> {
   const AddFreeTimeFamily();
 
   /// See also [addFreeTime].
-  AddFreeTimeProvider call(
-    FreeTime freeTime,
-  ) {
-    return AddFreeTimeProvider(
-      freeTime,
-    );
+  AddFreeTimeProvider call(FreeTime freeTime) {
+    return AddFreeTimeProvider(freeTime);
   }
 
   @override
   AddFreeTimeProvider getProviderOverride(
     covariant AddFreeTimeProvider provider,
   ) {
-    return call(
-      provider.freeTime,
-    );
+    return call(provider.freeTime);
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -74,24 +68,19 @@ class AddFreeTimeFamily extends Family<AsyncValue<FreeTime?>> {
 /// See also [addFreeTime].
 class AddFreeTimeProvider extends AutoDisposeFutureProvider<FreeTime?> {
   /// See also [addFreeTime].
-  AddFreeTimeProvider(
-    FreeTime freeTime,
-  ) : this._internal(
-          (ref) => addFreeTime(
-            ref as AddFreeTimeRef,
-            freeTime,
-          ),
-          from: addFreeTimeProvider,
-          name: r'addFreeTimeProvider',
-          debugGetCreateSourceHash:
-              const bool.fromEnvironment('dart.vm.product')
-                  ? null
-                  : _$addFreeTimeHash,
-          dependencies: AddFreeTimeFamily._dependencies,
-          allTransitiveDependencies:
-              AddFreeTimeFamily._allTransitiveDependencies,
-          freeTime: freeTime,
-        );
+  AddFreeTimeProvider(FreeTime freeTime)
+    : this._internal(
+        (ref) => addFreeTime(ref as AddFreeTimeRef, freeTime),
+        from: addFreeTimeProvider,
+        name: r'addFreeTimeProvider',
+        debugGetCreateSourceHash:
+            const bool.fromEnvironment('dart.vm.product')
+                ? null
+                : _$addFreeTimeHash,
+        dependencies: AddFreeTimeFamily._dependencies,
+        allTransitiveDependencies: AddFreeTimeFamily._allTransitiveDependencies,
+        freeTime: freeTime,
+      );
 
   AddFreeTimeProvider._internal(
     super._createNotifier, {
@@ -150,11 +139,13 @@ mixin AddFreeTimeRef on AutoDisposeFutureProviderRef<FreeTime?> {
 }
 
 class _AddFreeTimeProviderElement
-    extends AutoDisposeFutureProviderElement<FreeTime?> with AddFreeTimeRef {
+    extends AutoDisposeFutureProviderElement<FreeTime?>
+    with AddFreeTimeRef {
   _AddFreeTimeProviderElement(super.provider);
 
   @override
   FreeTime get freeTime => (origin as AddFreeTimeProvider).freeTime;
 }
+
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

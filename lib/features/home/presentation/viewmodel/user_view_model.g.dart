@@ -12,14 +12,15 @@ String _$userViewModelHash() => r'b279e5ab8e9dc73c87889424711f3db9ff78089a';
 @ProviderFor(UserViewModel)
 final userViewModelProvider =
     AutoDisposeNotifierProvider<UserViewModel, User?>.internal(
-  UserViewModel.new,
-  name: r'userViewModelProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$userViewModelHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      UserViewModel.new,
+      name: r'userViewModelProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$userViewModelHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 typedef _$UserViewModel = AutoDisposeNotifier<User?>;
 // ignore_for_file: type=lint

@@ -6,32 +6,25 @@ part of 'free_time_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AddFreeTimeResponseImpl _$$AddFreeTimeResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$AddFreeTimeResponseImpl(
+_AddFreeTimeResponse _$AddFreeTimeResponseFromJson(Map<String, dynamic> json) =>
+    _AddFreeTimeResponse(
       status: json['status'] as String,
       data: AddFreeTimeDataResponse.fromJson(
-          json['data'] as Map<String, dynamic>),
+        json['data'] as Map<String, dynamic>,
+      ),
     );
 
-Map<String, dynamic> _$$AddFreeTimeResponseImplToJson(
-        _$AddFreeTimeResponseImpl instance) =>
-    <String, dynamic>{
-      'status': instance.status,
-      'data': instance.data,
-    };
+Map<String, dynamic> _$AddFreeTimeResponseToJson(
+  _AddFreeTimeResponse instance,
+) => <String, dynamic>{'status': instance.status, 'data': instance.data};
 
-_$FreeTimeListResponseImpl _$$FreeTimeListResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$FreeTimeListResponseImpl(
-      status: json['status'] as String,
-      data: FreeTimeListDataResponse.fromJson(
-          json['data'] as Map<String, dynamic>),
-    );
+_FreeTimeListResponse _$FreeTimeListResponseFromJson(
+  Map<String, dynamic> json,
+) => _FreeTimeListResponse(
+  status: json['status'] as String,
+  data: FreeTimeListDataResponse.fromJson(json['data'] as Map<String, dynamic>),
+);
 
-Map<String, dynamic> _$$FreeTimeListResponseImplToJson(
-        _$FreeTimeListResponseImpl instance) =>
-    <String, dynamic>{
-      'status': instance.status,
-      'data': instance.data,
-    };
+Map<String, dynamic> _$FreeTimeListResponseToJson(
+  _FreeTimeListResponse instance,
+) => <String, dynamic>{'status': instance.status, 'data': instance.data};

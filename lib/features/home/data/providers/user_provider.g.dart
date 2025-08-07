@@ -13,9 +13,10 @@ String _$userDataSourceHash() => r'e8ec54c852126078e6219697b7b285ad23edfe91';
 final userDataSourceProvider = AutoDisposeProvider<UserDataSource>.internal(
   userDataSource,
   name: r'userDataSourceProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$userDataSourceHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$userDataSourceHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
@@ -30,9 +31,10 @@ String _$userRepositoryHash() => r'1400f6aa1a667cd2fb4698de615ca73f7b870763';
 final userRepositoryProvider = AutoDisposeProvider<UserRepository>.internal(
   userRepository,
   name: r'userRepositoryProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$userRepositoryHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$userRepositoryHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

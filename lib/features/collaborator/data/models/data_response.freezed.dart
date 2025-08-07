@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,649 +9,1067 @@ part of 'data_response.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-AddDataResponse _$AddDataResponseFromJson(Map<String, dynamic> json) {
-  return _AddDataResponse.fromJson(json);
-}
 
 /// @nodoc
 mixin _$AddDataResponse {
-  int get id => throw _privateConstructorUsedError;
-  int get availableDays => throw _privateConstructorUsedError;
+
+ int get id; int get availableDays;
+/// Create a copy of AddDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AddDataResponseCopyWith<AddDataResponse> get copyWith => _$AddDataResponseCopyWithImpl<AddDataResponse>(this as AddDataResponse, _$identity);
 
   /// Serializes this AddDataResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of AddDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AddDataResponseCopyWith<AddDataResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AddDataResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.availableDays, availableDays) || other.availableDays == availableDays));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,availableDays);
+
+@override
+String toString() {
+  return 'AddDataResponse(id: $id, availableDays: $availableDays)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AddDataResponseCopyWith<$Res> {
-  factory $AddDataResponseCopyWith(
-          AddDataResponse value, $Res Function(AddDataResponse) then) =
-      _$AddDataResponseCopyWithImpl<$Res, AddDataResponse>;
-  @useResult
-  $Res call({int id, int availableDays});
-}
+abstract mixin class $AddDataResponseCopyWith<$Res>  {
+  factory $AddDataResponseCopyWith(AddDataResponse value, $Res Function(AddDataResponse) _then) = _$AddDataResponseCopyWithImpl;
+@useResult
+$Res call({
+ int id, int availableDays
+});
 
+
+
+
+}
 /// @nodoc
-class _$AddDataResponseCopyWithImpl<$Res, $Val extends AddDataResponse>
+class _$AddDataResponseCopyWithImpl<$Res>
     implements $AddDataResponseCopyWith<$Res> {
-  _$AddDataResponseCopyWithImpl(this._value, this._then);
+  _$AddDataResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AddDataResponse _self;
+  final $Res Function(AddDataResponse) _then;
 
-  /// Create a copy of AddDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? availableDays = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      availableDays: null == availableDays
-          ? _value.availableDays
-          : availableDays // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of AddDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? availableDays = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,availableDays: null == availableDays ? _self.availableDays : availableDays // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AddDataResponseImplCopyWith<$Res>
-    implements $AddDataResponseCopyWith<$Res> {
-  factory _$$AddDataResponseImplCopyWith(_$AddDataResponseImpl value,
-          $Res Function(_$AddDataResponseImpl) then) =
-      __$$AddDataResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int id, int availableDays});
 }
 
-/// @nodoc
-class __$$AddDataResponseImplCopyWithImpl<$Res>
-    extends _$AddDataResponseCopyWithImpl<$Res, _$AddDataResponseImpl>
-    implements _$$AddDataResponseImplCopyWith<$Res> {
-  __$$AddDataResponseImplCopyWithImpl(
-      _$AddDataResponseImpl _value, $Res Function(_$AddDataResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of AddDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? availableDays = null,
-  }) {
-    return _then(_$AddDataResponseImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      availableDays: null == availableDays
-          ? _value.availableDays
-          : availableDays // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [AddDataResponse].
+extension AddDataResponsePatterns on AddDataResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AddDataResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AddDataResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AddDataResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _AddDataResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AddDataResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _AddDataResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  int availableDays)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AddDataResponse() when $default != null:
+return $default(_that.id,_that.availableDays);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  int availableDays)  $default,) {final _that = this;
+switch (_that) {
+case _AddDataResponse():
+return $default(_that.id,_that.availableDays);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  int availableDays)?  $default,) {final _that = this;
+switch (_that) {
+case _AddDataResponse() when $default != null:
+return $default(_that.id,_that.availableDays);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$AddDataResponseImpl implements _AddDataResponse {
-  const _$AddDataResponseImpl({required this.id, required this.availableDays});
 
-  factory _$AddDataResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AddDataResponseImplFromJson(json);
+class _AddDataResponse implements AddDataResponse {
+  const _AddDataResponse({required this.id, required this.availableDays});
+  factory _AddDataResponse.fromJson(Map<String, dynamic> json) => _$AddDataResponseFromJson(json);
 
-  @override
-  final int id;
-  @override
-  final int availableDays;
+@override final  int id;
+@override final  int availableDays;
 
-  @override
-  String toString() {
-    return 'AddDataResponse(id: $id, availableDays: $availableDays)';
-  }
+/// Create a copy of AddDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AddDataResponseCopyWith<_AddDataResponse> get copyWith => __$AddDataResponseCopyWithImpl<_AddDataResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AddDataResponseImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.availableDays, availableDays) ||
-                other.availableDays == availableDays));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, availableDays);
-
-  /// Create a copy of AddDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AddDataResponseImplCopyWith<_$AddDataResponseImpl> get copyWith =>
-      __$$AddDataResponseImplCopyWithImpl<_$AddDataResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AddDataResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$AddDataResponseToJson(this, );
 }
 
-abstract class _AddDataResponse implements AddDataResponse {
-  const factory _AddDataResponse(
-      {required final int id,
-      required final int availableDays}) = _$AddDataResponseImpl;
-
-  factory _AddDataResponse.fromJson(Map<String, dynamic> json) =
-      _$AddDataResponseImpl.fromJson;
-
-  @override
-  int get id;
-  @override
-  int get availableDays;
-
-  /// Create a copy of AddDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AddDataResponseImplCopyWith<_$AddDataResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AddDataResponse&&(identical(other.id, id) || other.id == id)&&(identical(other.availableDays, availableDays) || other.availableDays == availableDays));
 }
 
-EditDataResponse _$EditDataResponseFromJson(Map<String, dynamic> json) {
-  return _EditDataResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,availableDays);
+
+@override
+String toString() {
+  return 'AddDataResponse(id: $id, availableDays: $availableDays)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AddDataResponseCopyWith<$Res> implements $AddDataResponseCopyWith<$Res> {
+  factory _$AddDataResponseCopyWith(_AddDataResponse value, $Res Function(_AddDataResponse) _then) = __$AddDataResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, int availableDays
+});
+
+
+
+
+}
+/// @nodoc
+class __$AddDataResponseCopyWithImpl<$Res>
+    implements _$AddDataResponseCopyWith<$Res> {
+  __$AddDataResponseCopyWithImpl(this._self, this._then);
+
+  final _AddDataResponse _self;
+  final $Res Function(_AddDataResponse) _then;
+
+/// Create a copy of AddDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? availableDays = null,}) {
+  return _then(_AddDataResponse(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,availableDays: null == availableDays ? _self.availableDays : availableDays // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$EditDataResponse {
-  int get id => throw _privateConstructorUsedError;
+
+ int get id;
+/// Create a copy of EditDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$EditDataResponseCopyWith<EditDataResponse> get copyWith => _$EditDataResponseCopyWithImpl<EditDataResponse>(this as EditDataResponse, _$identity);
 
   /// Serializes this EditDataResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of EditDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $EditDataResponseCopyWith<EditDataResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is EditDataResponse&&(identical(other.id, id) || other.id == id));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id);
+
+@override
+String toString() {
+  return 'EditDataResponse(id: $id)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $EditDataResponseCopyWith<$Res> {
-  factory $EditDataResponseCopyWith(
-          EditDataResponse value, $Res Function(EditDataResponse) then) =
-      _$EditDataResponseCopyWithImpl<$Res, EditDataResponse>;
-  @useResult
-  $Res call({int id});
-}
+abstract mixin class $EditDataResponseCopyWith<$Res>  {
+  factory $EditDataResponseCopyWith(EditDataResponse value, $Res Function(EditDataResponse) _then) = _$EditDataResponseCopyWithImpl;
+@useResult
+$Res call({
+ int id
+});
 
+
+
+
+}
 /// @nodoc
-class _$EditDataResponseCopyWithImpl<$Res, $Val extends EditDataResponse>
+class _$EditDataResponseCopyWithImpl<$Res>
     implements $EditDataResponseCopyWith<$Res> {
-  _$EditDataResponseCopyWithImpl(this._value, this._then);
+  _$EditDataResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final EditDataResponse _self;
+  final $Res Function(EditDataResponse) _then;
 
-  /// Create a copy of EditDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of EditDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$EditDataResponseImplCopyWith<$Res>
-    implements $EditDataResponseCopyWith<$Res> {
-  factory _$$EditDataResponseImplCopyWith(_$EditDataResponseImpl value,
-          $Res Function(_$EditDataResponseImpl) then) =
-      __$$EditDataResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int id});
 }
 
-/// @nodoc
-class __$$EditDataResponseImplCopyWithImpl<$Res>
-    extends _$EditDataResponseCopyWithImpl<$Res, _$EditDataResponseImpl>
-    implements _$$EditDataResponseImplCopyWith<$Res> {
-  __$$EditDataResponseImplCopyWithImpl(_$EditDataResponseImpl _value,
-      $Res Function(_$EditDataResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of EditDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-  }) {
-    return _then(_$EditDataResponseImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [EditDataResponse].
+extension EditDataResponsePatterns on EditDataResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _EditDataResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _EditDataResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _EditDataResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _EditDataResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _EditDataResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _EditDataResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _EditDataResponse() when $default != null:
+return $default(_that.id);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id)  $default,) {final _that = this;
+switch (_that) {
+case _EditDataResponse():
+return $default(_that.id);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id)?  $default,) {final _that = this;
+switch (_that) {
+case _EditDataResponse() when $default != null:
+return $default(_that.id);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$EditDataResponseImpl implements _EditDataResponse {
-  const _$EditDataResponseImpl({required this.id});
 
-  factory _$EditDataResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$EditDataResponseImplFromJson(json);
+class _EditDataResponse implements EditDataResponse {
+  const _EditDataResponse({required this.id});
+  factory _EditDataResponse.fromJson(Map<String, dynamic> json) => _$EditDataResponseFromJson(json);
 
-  @override
-  final int id;
+@override final  int id;
 
-  @override
-  String toString() {
-    return 'EditDataResponse(id: $id)';
-  }
+/// Create a copy of EditDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$EditDataResponseCopyWith<_EditDataResponse> get copyWith => __$EditDataResponseCopyWithImpl<_EditDataResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$EditDataResponseImpl &&
-            (identical(other.id, id) || other.id == id));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id);
-
-  /// Create a copy of EditDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$EditDataResponseImplCopyWith<_$EditDataResponseImpl> get copyWith =>
-      __$$EditDataResponseImplCopyWithImpl<_$EditDataResponseImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$EditDataResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$EditDataResponseToJson(this, );
 }
 
-abstract class _EditDataResponse implements EditDataResponse {
-  const factory _EditDataResponse({required final int id}) =
-      _$EditDataResponseImpl;
-
-  factory _EditDataResponse.fromJson(Map<String, dynamic> json) =
-      _$EditDataResponseImpl.fromJson;
-
-  @override
-  int get id;
-
-  /// Create a copy of EditDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$EditDataResponseImplCopyWith<_$EditDataResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _EditDataResponse&&(identical(other.id, id) || other.id == id));
 }
 
-AddFreeTimeDataResponse _$AddFreeTimeDataResponseFromJson(
-    Map<String, dynamic> json) {
-  return _AddFreeTimeDataResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id);
+
+@override
+String toString() {
+  return 'EditDataResponse(id: $id)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$EditDataResponseCopyWith<$Res> implements $EditDataResponseCopyWith<$Res> {
+  factory _$EditDataResponseCopyWith(_EditDataResponse value, $Res Function(_EditDataResponse) _then) = __$EditDataResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int id
+});
+
+
+
+
+}
+/// @nodoc
+class __$EditDataResponseCopyWithImpl<$Res>
+    implements _$EditDataResponseCopyWith<$Res> {
+  __$EditDataResponseCopyWithImpl(this._self, this._then);
+
+  final _EditDataResponse _self;
+  final $Res Function(_EditDataResponse) _then;
+
+/// Create a copy of EditDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
+  return _then(_EditDataResponse(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$AddFreeTimeDataResponse {
-  int get id => throw _privateConstructorUsedError;
+
+ int get id;
+/// Create a copy of AddFreeTimeDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AddFreeTimeDataResponseCopyWith<AddFreeTimeDataResponse> get copyWith => _$AddFreeTimeDataResponseCopyWithImpl<AddFreeTimeDataResponse>(this as AddFreeTimeDataResponse, _$identity);
 
   /// Serializes this AddFreeTimeDataResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of AddFreeTimeDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AddFreeTimeDataResponseCopyWith<AddFreeTimeDataResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AddFreeTimeDataResponse&&(identical(other.id, id) || other.id == id));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id);
+
+@override
+String toString() {
+  return 'AddFreeTimeDataResponse(id: $id)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AddFreeTimeDataResponseCopyWith<$Res> {
-  factory $AddFreeTimeDataResponseCopyWith(AddFreeTimeDataResponse value,
-          $Res Function(AddFreeTimeDataResponse) then) =
-      _$AddFreeTimeDataResponseCopyWithImpl<$Res, AddFreeTimeDataResponse>;
-  @useResult
-  $Res call({int id});
-}
+abstract mixin class $AddFreeTimeDataResponseCopyWith<$Res>  {
+  factory $AddFreeTimeDataResponseCopyWith(AddFreeTimeDataResponse value, $Res Function(AddFreeTimeDataResponse) _then) = _$AddFreeTimeDataResponseCopyWithImpl;
+@useResult
+$Res call({
+ int id
+});
 
+
+
+
+}
 /// @nodoc
-class _$AddFreeTimeDataResponseCopyWithImpl<$Res,
-        $Val extends AddFreeTimeDataResponse>
+class _$AddFreeTimeDataResponseCopyWithImpl<$Res>
     implements $AddFreeTimeDataResponseCopyWith<$Res> {
-  _$AddFreeTimeDataResponseCopyWithImpl(this._value, this._then);
+  _$AddFreeTimeDataResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AddFreeTimeDataResponse _self;
+  final $Res Function(AddFreeTimeDataResponse) _then;
 
-  /// Create a copy of AddFreeTimeDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of AddFreeTimeDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AddFreeTimeDataResponseImplCopyWith<$Res>
-    implements $AddFreeTimeDataResponseCopyWith<$Res> {
-  factory _$$AddFreeTimeDataResponseImplCopyWith(
-          _$AddFreeTimeDataResponseImpl value,
-          $Res Function(_$AddFreeTimeDataResponseImpl) then) =
-      __$$AddFreeTimeDataResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int id});
 }
 
-/// @nodoc
-class __$$AddFreeTimeDataResponseImplCopyWithImpl<$Res>
-    extends _$AddFreeTimeDataResponseCopyWithImpl<$Res,
-        _$AddFreeTimeDataResponseImpl>
-    implements _$$AddFreeTimeDataResponseImplCopyWith<$Res> {
-  __$$AddFreeTimeDataResponseImplCopyWithImpl(
-      _$AddFreeTimeDataResponseImpl _value,
-      $Res Function(_$AddFreeTimeDataResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of AddFreeTimeDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-  }) {
-    return _then(_$AddFreeTimeDataResponseImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [AddFreeTimeDataResponse].
+extension AddFreeTimeDataResponsePatterns on AddFreeTimeDataResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AddFreeTimeDataResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AddFreeTimeDataResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AddFreeTimeDataResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse() when $default != null:
+return $default(_that.id);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id)  $default,) {final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse():
+return $default(_that.id);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id)?  $default,) {final _that = this;
+switch (_that) {
+case _AddFreeTimeDataResponse() when $default != null:
+return $default(_that.id);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$AddFreeTimeDataResponseImpl implements _AddFreeTimeDataResponse {
-  const _$AddFreeTimeDataResponseImpl({required this.id});
 
-  factory _$AddFreeTimeDataResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AddFreeTimeDataResponseImplFromJson(json);
+class _AddFreeTimeDataResponse implements AddFreeTimeDataResponse {
+  const _AddFreeTimeDataResponse({required this.id});
+  factory _AddFreeTimeDataResponse.fromJson(Map<String, dynamic> json) => _$AddFreeTimeDataResponseFromJson(json);
 
-  @override
-  final int id;
+@override final  int id;
 
-  @override
-  String toString() {
-    return 'AddFreeTimeDataResponse(id: $id)';
-  }
+/// Create a copy of AddFreeTimeDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AddFreeTimeDataResponseCopyWith<_AddFreeTimeDataResponse> get copyWith => __$AddFreeTimeDataResponseCopyWithImpl<_AddFreeTimeDataResponse>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AddFreeTimeDataResponseImpl &&
-            (identical(other.id, id) || other.id == id));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id);
-
-  /// Create a copy of AddFreeTimeDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AddFreeTimeDataResponseImplCopyWith<_$AddFreeTimeDataResponseImpl>
-      get copyWith => __$$AddFreeTimeDataResponseImplCopyWithImpl<
-          _$AddFreeTimeDataResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AddFreeTimeDataResponseImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$AddFreeTimeDataResponseToJson(this, );
 }
 
-abstract class _AddFreeTimeDataResponse implements AddFreeTimeDataResponse {
-  const factory _AddFreeTimeDataResponse({required final int id}) =
-      _$AddFreeTimeDataResponseImpl;
-
-  factory _AddFreeTimeDataResponse.fromJson(Map<String, dynamic> json) =
-      _$AddFreeTimeDataResponseImpl.fromJson;
-
-  @override
-  int get id;
-
-  /// Create a copy of AddFreeTimeDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AddFreeTimeDataResponseImplCopyWith<_$AddFreeTimeDataResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AddFreeTimeDataResponse&&(identical(other.id, id) || other.id == id));
 }
 
-FreeTimeListDataResponse _$FreeTimeListDataResponseFromJson(
-    Map<String, dynamic> json) {
-  return _FreeTimeListDataResponse.fromJson(json);
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id);
+
+@override
+String toString() {
+  return 'AddFreeTimeDataResponse(id: $id)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AddFreeTimeDataResponseCopyWith<$Res> implements $AddFreeTimeDataResponseCopyWith<$Res> {
+  factory _$AddFreeTimeDataResponseCopyWith(_AddFreeTimeDataResponse value, $Res Function(_AddFreeTimeDataResponse) _then) = __$AddFreeTimeDataResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ int id
+});
+
+
+
+
+}
+/// @nodoc
+class __$AddFreeTimeDataResponseCopyWithImpl<$Res>
+    implements _$AddFreeTimeDataResponseCopyWith<$Res> {
+  __$AddFreeTimeDataResponseCopyWithImpl(this._self, this._then);
+
+  final _AddFreeTimeDataResponse _self;
+  final $Res Function(_AddFreeTimeDataResponse) _then;
+
+/// Create a copy of AddFreeTimeDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
+  return _then(_AddFreeTimeDataResponse(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
 
 /// @nodoc
 mixin _$FreeTimeListDataResponse {
-  List<FreeTime> get freeTimeList => throw _privateConstructorUsedError;
+
+ List<FreeTime> get freeTimeList;
+/// Create a copy of FreeTimeListDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$FreeTimeListDataResponseCopyWith<FreeTimeListDataResponse> get copyWith => _$FreeTimeListDataResponseCopyWithImpl<FreeTimeListDataResponse>(this as FreeTimeListDataResponse, _$identity);
 
   /// Serializes this FreeTimeListDataResponse to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of FreeTimeListDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $FreeTimeListDataResponseCopyWith<FreeTimeListDataResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is FreeTimeListDataResponse&&const DeepCollectionEquality().equals(other.freeTimeList, freeTimeList));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(freeTimeList));
+
+@override
+String toString() {
+  return 'FreeTimeListDataResponse(freeTimeList: $freeTimeList)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $FreeTimeListDataResponseCopyWith<$Res> {
-  factory $FreeTimeListDataResponseCopyWith(FreeTimeListDataResponse value,
-          $Res Function(FreeTimeListDataResponse) then) =
-      _$FreeTimeListDataResponseCopyWithImpl<$Res, FreeTimeListDataResponse>;
-  @useResult
-  $Res call({List<FreeTime> freeTimeList});
-}
+abstract mixin class $FreeTimeListDataResponseCopyWith<$Res>  {
+  factory $FreeTimeListDataResponseCopyWith(FreeTimeListDataResponse value, $Res Function(FreeTimeListDataResponse) _then) = _$FreeTimeListDataResponseCopyWithImpl;
+@useResult
+$Res call({
+ List<FreeTime> freeTimeList
+});
 
+
+
+
+}
 /// @nodoc
-class _$FreeTimeListDataResponseCopyWithImpl<$Res,
-        $Val extends FreeTimeListDataResponse>
+class _$FreeTimeListDataResponseCopyWithImpl<$Res>
     implements $FreeTimeListDataResponseCopyWith<$Res> {
-  _$FreeTimeListDataResponseCopyWithImpl(this._value, this._then);
+  _$FreeTimeListDataResponseCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final FreeTimeListDataResponse _self;
+  final $Res Function(FreeTimeListDataResponse) _then;
 
-  /// Create a copy of FreeTimeListDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? freeTimeList = null,
-  }) {
-    return _then(_value.copyWith(
-      freeTimeList: null == freeTimeList
-          ? _value.freeTimeList
-          : freeTimeList // ignore: cast_nullable_to_non_nullable
-              as List<FreeTime>,
-    ) as $Val);
-  }
+/// Create a copy of FreeTimeListDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? freeTimeList = null,}) {
+  return _then(_self.copyWith(
+freeTimeList: null == freeTimeList ? _self.freeTimeList : freeTimeList // ignore: cast_nullable_to_non_nullable
+as List<FreeTime>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$FreeTimeListDataResponseImplCopyWith<$Res>
-    implements $FreeTimeListDataResponseCopyWith<$Res> {
-  factory _$$FreeTimeListDataResponseImplCopyWith(
-          _$FreeTimeListDataResponseImpl value,
-          $Res Function(_$FreeTimeListDataResponseImpl) then) =
-      __$$FreeTimeListDataResponseImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({List<FreeTime> freeTimeList});
 }
 
-/// @nodoc
-class __$$FreeTimeListDataResponseImplCopyWithImpl<$Res>
-    extends _$FreeTimeListDataResponseCopyWithImpl<$Res,
-        _$FreeTimeListDataResponseImpl>
-    implements _$$FreeTimeListDataResponseImplCopyWith<$Res> {
-  __$$FreeTimeListDataResponseImplCopyWithImpl(
-      _$FreeTimeListDataResponseImpl _value,
-      $Res Function(_$FreeTimeListDataResponseImpl) _then)
-      : super(_value, _then);
 
-  /// Create a copy of FreeTimeListDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? freeTimeList = null,
-  }) {
-    return _then(_$FreeTimeListDataResponseImpl(
-      freeTimeList: null == freeTimeList
-          ? _value._freeTimeList
-          : freeTimeList // ignore: cast_nullable_to_non_nullable
-              as List<FreeTime>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [FreeTimeListDataResponse].
+extension FreeTimeListDataResponsePatterns on FreeTimeListDataResponse {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _FreeTimeListDataResponse value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _FreeTimeListDataResponse value)  $default,){
+final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _FreeTimeListDataResponse value)?  $default,){
+final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( List<FreeTime> freeTimeList)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse() when $default != null:
+return $default(_that.freeTimeList);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( List<FreeTime> freeTimeList)  $default,) {final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse():
+return $default(_that.freeTimeList);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( List<FreeTime> freeTimeList)?  $default,) {final _that = this;
+switch (_that) {
+case _FreeTimeListDataResponse() when $default != null:
+return $default(_that.freeTimeList);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$FreeTimeListDataResponseImpl implements _FreeTimeListDataResponse {
-  const _$FreeTimeListDataResponseImpl(
-      {required final List<FreeTime> freeTimeList})
-      : _freeTimeList = freeTimeList;
 
-  factory _$FreeTimeListDataResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FreeTimeListDataResponseImplFromJson(json);
+class _FreeTimeListDataResponse implements FreeTimeListDataResponse {
+  const _FreeTimeListDataResponse({required final  List<FreeTime> freeTimeList}): _freeTimeList = freeTimeList;
+  factory _FreeTimeListDataResponse.fromJson(Map<String, dynamic> json) => _$FreeTimeListDataResponseFromJson(json);
 
-  final List<FreeTime> _freeTimeList;
-  @override
-  List<FreeTime> get freeTimeList {
-    if (_freeTimeList is EqualUnmodifiableListView) return _freeTimeList;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_freeTimeList);
-  }
-
-  @override
-  String toString() {
-    return 'FreeTimeListDataResponse(freeTimeList: $freeTimeList)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FreeTimeListDataResponseImpl &&
-            const DeepCollectionEquality()
-                .equals(other._freeTimeList, _freeTimeList));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_freeTimeList));
-
-  /// Create a copy of FreeTimeListDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FreeTimeListDataResponseImplCopyWith<_$FreeTimeListDataResponseImpl>
-      get copyWith => __$$FreeTimeListDataResponseImplCopyWithImpl<
-          _$FreeTimeListDataResponseImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$FreeTimeListDataResponseImplToJson(
-      this,
-    );
-  }
+ final  List<FreeTime> _freeTimeList;
+@override List<FreeTime> get freeTimeList {
+  if (_freeTimeList is EqualUnmodifiableListView) return _freeTimeList;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_freeTimeList);
 }
 
-abstract class _FreeTimeListDataResponse implements FreeTimeListDataResponse {
-  const factory _FreeTimeListDataResponse(
-          {required final List<FreeTime> freeTimeList}) =
-      _$FreeTimeListDataResponseImpl;
 
-  factory _FreeTimeListDataResponse.fromJson(Map<String, dynamic> json) =
-      _$FreeTimeListDataResponseImpl.fromJson;
+/// Create a copy of FreeTimeListDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$FreeTimeListDataResponseCopyWith<_FreeTimeListDataResponse> get copyWith => __$FreeTimeListDataResponseCopyWithImpl<_FreeTimeListDataResponse>(this, _$identity);
 
-  @override
-  List<FreeTime> get freeTimeList;
-
-  /// Create a copy of FreeTimeListDataResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$FreeTimeListDataResponseImplCopyWith<_$FreeTimeListDataResponseImpl>
-      get copyWith => throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$FreeTimeListDataResponseToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _FreeTimeListDataResponse&&const DeepCollectionEquality().equals(other._freeTimeList, _freeTimeList));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_freeTimeList));
+
+@override
+String toString() {
+  return 'FreeTimeListDataResponse(freeTimeList: $freeTimeList)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$FreeTimeListDataResponseCopyWith<$Res> implements $FreeTimeListDataResponseCopyWith<$Res> {
+  factory _$FreeTimeListDataResponseCopyWith(_FreeTimeListDataResponse value, $Res Function(_FreeTimeListDataResponse) _then) = __$FreeTimeListDataResponseCopyWithImpl;
+@override @useResult
+$Res call({
+ List<FreeTime> freeTimeList
+});
+
+
+
+
+}
+/// @nodoc
+class __$FreeTimeListDataResponseCopyWithImpl<$Res>
+    implements _$FreeTimeListDataResponseCopyWith<$Res> {
+  __$FreeTimeListDataResponseCopyWithImpl(this._self, this._then);
+
+  final _FreeTimeListDataResponse _self;
+  final $Res Function(_FreeTimeListDataResponse) _then;
+
+/// Create a copy of FreeTimeListDataResponse
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? freeTimeList = null,}) {
+  return _then(_FreeTimeListDataResponse(
+freeTimeList: null == freeTimeList ? _self._freeTimeList : freeTimeList // ignore: cast_nullable_to_non_nullable
+as List<FreeTime>,
+  ));
+}
+
+
+}
+
+// dart format on

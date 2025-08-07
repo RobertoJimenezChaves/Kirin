@@ -12,14 +12,15 @@ String _$themeStyleModeHash() => r'd7fc5b49ecb545e19ac1ae404872d60cca35389b';
 @ProviderFor(ThemeStyleMode)
 final themeStyleModeProvider =
     AutoDisposeNotifierProvider<ThemeStyleMode, ThemeMode>.internal(
-  ThemeStyleMode.new,
-  name: r'themeStyleModeProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$themeStyleModeHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      ThemeStyleMode.new,
+      name: r'themeStyleModeProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$themeStyleModeHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 typedef _$ThemeStyleMode = AutoDisposeNotifier<ThemeMode>;
 // ignore_for_file: type=lint

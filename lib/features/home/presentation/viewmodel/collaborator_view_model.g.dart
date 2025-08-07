@@ -12,12 +12,15 @@ String _$collaboratorViewModelHash() =>
 /// See also [CollaboratorViewModel].
 @ProviderFor(CollaboratorViewModel)
 final collaboratorViewModelProvider = AutoDisposeAsyncNotifierProvider<
-    CollaboratorViewModel, List<Collaborator>>.internal(
+  CollaboratorViewModel,
+  List<Collaborator>
+>.internal(
   CollaboratorViewModel.new,
   name: r'collaboratorViewModelProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$collaboratorViewModelHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$collaboratorViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

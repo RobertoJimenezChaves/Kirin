@@ -6,54 +6,41 @@ part of 'data_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AddDataResponseImpl _$$AddDataResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$AddDataResponseImpl(
+_AddDataResponse _$AddDataResponseFromJson(Map<String, dynamic> json) =>
+    _AddDataResponse(
       id: (json['id'] as num).toInt(),
       availableDays: (json['availableDays'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$AddDataResponseImplToJson(
-        _$AddDataResponseImpl instance) =>
+Map<String, dynamic> _$AddDataResponseToJson(_AddDataResponse instance) =>
     <String, dynamic>{
       'id': instance.id,
       'availableDays': instance.availableDays,
     };
 
-_$EditDataResponseImpl _$$EditDataResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$EditDataResponseImpl(
-      id: (json['id'] as num).toInt(),
-    );
+_EditDataResponse _$EditDataResponseFromJson(Map<String, dynamic> json) =>
+    _EditDataResponse(id: (json['id'] as num).toInt());
 
-Map<String, dynamic> _$$EditDataResponseImplToJson(
-        _$EditDataResponseImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
+Map<String, dynamic> _$EditDataResponseToJson(_EditDataResponse instance) =>
+    <String, dynamic>{'id': instance.id};
 
-_$AddFreeTimeDataResponseImpl _$$AddFreeTimeDataResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$AddFreeTimeDataResponseImpl(
-      id: (json['id'] as num).toInt(),
-    );
+_AddFreeTimeDataResponse _$AddFreeTimeDataResponseFromJson(
+  Map<String, dynamic> json,
+) => _AddFreeTimeDataResponse(id: (json['id'] as num).toInt());
 
-Map<String, dynamic> _$$AddFreeTimeDataResponseImplToJson(
-        _$AddFreeTimeDataResponseImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
+Map<String, dynamic> _$AddFreeTimeDataResponseToJson(
+  _AddFreeTimeDataResponse instance,
+) => <String, dynamic>{'id': instance.id};
 
-_$FreeTimeListDataResponseImpl _$$FreeTimeListDataResponseImplFromJson(
-        Map<String, dynamic> json) =>
-    _$FreeTimeListDataResponseImpl(
-      freeTimeList: (json['freeTimeList'] as List<dynamic>)
+_FreeTimeListDataResponse _$FreeTimeListDataResponseFromJson(
+  Map<String, dynamic> json,
+) => _FreeTimeListDataResponse(
+  freeTimeList:
+      (json['freeTimeList'] as List<dynamic>)
           .map((e) => FreeTime.fromJson(e as Map<String, dynamic>))
           .toList(),
-    );
+);
 
-Map<String, dynamic> _$$FreeTimeListDataResponseImplToJson(
-        _$FreeTimeListDataResponseImpl instance) =>
-    <String, dynamic>{
-      'freeTimeList': instance.freeTimeList,
-    };
+Map<String, dynamic> _$FreeTimeListDataResponseToJson(
+  _FreeTimeListDataResponse instance,
+) => <String, dynamic>{'freeTimeList': instance.freeTimeList};
