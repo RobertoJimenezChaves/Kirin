@@ -6,10 +6,13 @@ part of 'collaborator_datasource.dart';
 // RetrofitGenerator
 // **************************************************************************
 
-// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element,unnecessary_string_interpolations,unused_element_parameter
+// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
 class _CollaboratorDataSource implements CollaboratorDataSource {
-  _CollaboratorDataSource(this._dio, {this.baseUrl, this.errorLogger}) {
+  _CollaboratorDataSource(
+    this._dio, {
+    this.baseUrl,
+  }) {
     baseUrl ??= 'http://192.168.86.26:3001';
   }
 
@@ -17,64 +20,60 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
 
   String? baseUrl;
 
-  final ParseErrorLogger? errorLogger;
-
   @override
-  Future<SaveCollaboratorResponse> addCollaborator({
-    required Collaborator collaborator,
-  }) async {
-    final _extra = <String, dynamic>{};
+  Future<SaveCollaboratorResponse> addCollaborator(
+      {required Collaborator collaborator}) async {
+    const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<SaveCollaboratorResponse>(
-      Options(method: 'POST', headers: _headers, extra: _extra)
-          .compose(
-            _dio.options,
-            '/add-collaborator',
-            queryParameters: queryParameters,
-            data: _data,
-          )
-          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
-    );
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late SaveCollaboratorResponse _value;
-    try {
-      _value = SaveCollaboratorResponse.fromJson(_result.data!);
-    } on Object catch (e, s) {
-      errorLogger?.logError(e, s, _options);
-      rethrow;
-    }
-    return _value;
+    final Map<String, dynamic>? _data = null;
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<SaveCollaboratorResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              '/add-collaborator',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final value = SaveCollaboratorResponse.fromJson(_result.data!);
+    return value;
   }
 
   @override
-  Future<SaveCollaboratorResponse> editCollaborator({
-    required Collaborator collaborator,
-  }) async {
-    final _extra = <String, dynamic>{};
+  Future<SaveCollaboratorResponse> editCollaborator(
+      {required Collaborator collaborator}) async {
+    const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<SaveCollaboratorResponse>(
-      Options(method: 'POST', headers: _headers, extra: _extra)
-          .compose(
-            _dio.options,
-            '/edit-collaborator',
-            queryParameters: queryParameters,
-            data: _data,
-          )
-          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
-    );
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late SaveCollaboratorResponse _value;
-    try {
-      _value = SaveCollaboratorResponse.fromJson(_result.data!);
-    } on Object catch (e, s) {
-      errorLogger?.logError(e, s, _options);
-      rethrow;
-    }
-    return _value;
+    final Map<String, dynamic>? _data = null;
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<SaveCollaboratorResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              '/edit-collaborator',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final value = SaveCollaboratorResponse.fromJson(_result.data!);
+    return value;
   }
 
   RequestOptions _setStreamType<T>(RequestOptions requestOptions) {
@@ -90,7 +89,10 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
     return requestOptions;
   }
 
-  String _combineBaseUrls(String dioBaseUrl, String? baseUrl) {
+  String _combineBaseUrls(
+    String dioBaseUrl,
+    String? baseUrl,
+  ) {
     if (baseUrl == null || baseUrl.trim().isEmpty) {
       return dioBaseUrl;
     }

@@ -32,7 +32,9 @@ class _SystemHash {
 abstract class _$ActiveViewModel extends BuildlessAutoDisposeNotifier<bool> {
   late final bool active;
 
-  bool build(bool active);
+  bool build(
+    bool active,
+  );
 }
 
 /// See also [ActiveViewModel].
@@ -45,15 +47,21 @@ class ActiveViewModelFamily extends Family<bool> {
   const ActiveViewModelFamily();
 
   /// See also [ActiveViewModel].
-  ActiveViewModelProvider call(bool active) {
-    return ActiveViewModelProvider(active);
+  ActiveViewModelProvider call(
+    bool active,
+  ) {
+    return ActiveViewModelProvider(
+      active,
+    );
   }
 
   @override
   ActiveViewModelProvider getProviderOverride(
     covariant ActiveViewModelProvider provider,
   ) {
-    return call(provider.active);
+    return call(
+      provider.active,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -75,20 +83,21 @@ class ActiveViewModelFamily extends Family<bool> {
 class ActiveViewModelProvider
     extends AutoDisposeNotifierProviderImpl<ActiveViewModel, bool> {
   /// See also [ActiveViewModel].
-  ActiveViewModelProvider(bool active)
-    : this._internal(
-        () => ActiveViewModel()..active = active,
-        from: activeViewModelProvider,
-        name: r'activeViewModelProvider',
-        debugGetCreateSourceHash:
-            const bool.fromEnvironment('dart.vm.product')
-                ? null
-                : _$activeViewModelHash,
-        dependencies: ActiveViewModelFamily._dependencies,
-        allTransitiveDependencies:
-            ActiveViewModelFamily._allTransitiveDependencies,
-        active: active,
-      );
+  ActiveViewModelProvider(
+    bool active,
+  ) : this._internal(
+          () => ActiveViewModel()..active = active,
+          from: activeViewModelProvider,
+          name: r'activeViewModelProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$activeViewModelHash,
+          dependencies: ActiveViewModelFamily._dependencies,
+          allTransitiveDependencies:
+              ActiveViewModelFamily._allTransitiveDependencies,
+          active: active,
+        );
 
   ActiveViewModelProvider._internal(
     super._createNotifier, {
@@ -103,8 +112,12 @@ class ActiveViewModelProvider
   final bool active;
 
   @override
-  bool runNotifierBuild(covariant ActiveViewModel notifier) {
-    return notifier.build(active);
+  bool runNotifierBuild(
+    covariant ActiveViewModel notifier,
+  ) {
+    return notifier.build(
+      active,
+    );
   }
 
   @override
@@ -157,6 +170,5 @@ class _ActiveViewModelProviderElement
   @override
   bool get active => (origin as ActiveViewModelProvider).active;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

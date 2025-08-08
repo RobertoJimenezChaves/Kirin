@@ -6,13 +6,13 @@ part 'free_time_response.freezed.dart';
 part 'free_time_response.g.dart';
 
 @freezed
-abstract class AddFreeTimeResponse with _$AddFreeTimeResponse {
+class AddFreeTimeResponse with _$AddFreeTimeResponse {
   const factory AddFreeTimeResponse({required String status, required AddFreeTimeDataResponse data}) = _AddFreeTimeResponse;
 
   factory AddFreeTimeResponse.fromJson(Map<String, dynamic> json) => _$AddFreeTimeResponseFromJson(json);
 }
 @freezed
-abstract class FreeTimeListResponse with _$FreeTimeListResponse {
+class FreeTimeListResponse with _$FreeTimeListResponse {
   const factory FreeTimeListResponse({required String status, required FreeTimeListDataResponse data}) = _FreeTimeListResponse;
 
   factory FreeTimeListResponse.fromJson(Map<String, dynamic> json) => _$FreeTimeListResponseFromJson(json);

@@ -9,7 +9,7 @@ part 'data_response.freezed.dart';
 part 'data_response.g.dart';
 
 @freezed
-abstract class DataResponse with _$DataResponse {
+class DataResponse with _$DataResponse {
   const factory DataResponse({required List<Collaborator> collaboratorsList}) = _DataResponse;
 
   factory DataResponse.fromJson(Map<String, dynamic> json) => _$DataResponseFromJson(json);

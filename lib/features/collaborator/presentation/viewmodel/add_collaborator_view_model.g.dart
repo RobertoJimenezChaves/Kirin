@@ -39,15 +39,21 @@ class AddCollaboratorFamily extends Family<AsyncValue<Collaborator?>> {
   const AddCollaboratorFamily();
 
   /// See also [addCollaborator].
-  AddCollaboratorProvider call(Collaborator collaborator) {
-    return AddCollaboratorProvider(collaborator);
+  AddCollaboratorProvider call(
+    Collaborator collaborator,
+  ) {
+    return AddCollaboratorProvider(
+      collaborator,
+    );
   }
 
   @override
   AddCollaboratorProvider getProviderOverride(
     covariant AddCollaboratorProvider provider,
   ) {
-    return call(provider.collaborator);
+    return call(
+      provider.collaborator,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -68,20 +74,24 @@ class AddCollaboratorFamily extends Family<AsyncValue<Collaborator?>> {
 /// See also [addCollaborator].
 class AddCollaboratorProvider extends AutoDisposeFutureProvider<Collaborator?> {
   /// See also [addCollaborator].
-  AddCollaboratorProvider(Collaborator collaborator)
-    : this._internal(
-        (ref) => addCollaborator(ref as AddCollaboratorRef, collaborator),
-        from: addCollaboratorProvider,
-        name: r'addCollaboratorProvider',
-        debugGetCreateSourceHash:
-            const bool.fromEnvironment('dart.vm.product')
-                ? null
-                : _$addCollaboratorHash,
-        dependencies: AddCollaboratorFamily._dependencies,
-        allTransitiveDependencies:
-            AddCollaboratorFamily._allTransitiveDependencies,
-        collaborator: collaborator,
-      );
+  AddCollaboratorProvider(
+    Collaborator collaborator,
+  ) : this._internal(
+          (ref) => addCollaborator(
+            ref as AddCollaboratorRef,
+            collaborator,
+          ),
+          from: addCollaboratorProvider,
+          name: r'addCollaboratorProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$addCollaboratorHash,
+          dependencies: AddCollaboratorFamily._dependencies,
+          allTransitiveDependencies:
+              AddCollaboratorFamily._allTransitiveDependencies,
+          collaborator: collaborator,
+        );
 
   AddCollaboratorProvider._internal(
     super._createNotifier, {
@@ -149,6 +159,5 @@ class _AddCollaboratorProviderElement
   Collaborator get collaborator =>
       (origin as AddCollaboratorProvider).collaborator;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

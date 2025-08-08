@@ -13,15 +13,14 @@ String _$navigationViewModelHash() =>
 @ProviderFor(NavigationViewModel)
 final navigationViewModelProvider =
     AutoDisposeNotifierProvider<NavigationViewModel, int>.internal(
-      NavigationViewModel.new,
-      name: r'navigationViewModelProvider',
-      debugGetCreateSourceHash:
-          const bool.fromEnvironment('dart.vm.product')
-              ? null
-              : _$navigationViewModelHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  NavigationViewModel.new,
+  name: r'navigationViewModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$navigationViewModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 typedef _$NavigationViewModel = AutoDisposeNotifier<int>;
 // ignore_for_file: type=lint

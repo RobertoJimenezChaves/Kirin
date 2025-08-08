@@ -5,7 +5,7 @@ part 'free_time.freezed.dart';
 part 'free_time.g.dart';
 
 @freezed
-abstract class FreeTime with _$FreeTime {
+class FreeTime with _$FreeTime {
   const factory FreeTime({
     required int id,
     required int collaboratorId,

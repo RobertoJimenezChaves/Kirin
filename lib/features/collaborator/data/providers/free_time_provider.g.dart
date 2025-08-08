@@ -13,15 +13,14 @@ String _$freeTimeDataSourceHash() =>
 @ProviderFor(freeTimeDataSource)
 final freeTimeDataSourceProvider =
     AutoDisposeProvider<FreeTimeDataSource>.internal(
-      freeTimeDataSource,
-      name: r'freeTimeDataSourceProvider',
-      debugGetCreateSourceHash:
-          const bool.fromEnvironment('dart.vm.product')
-              ? null
-              : _$freeTimeDataSourceHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  freeTimeDataSource,
+  name: r'freeTimeDataSourceProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$freeTimeDataSourceHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
@@ -33,15 +32,14 @@ String _$freeTimeRepositoryHash() =>
 @ProviderFor(freeTimeRepository)
 final freeTimeRepositoryProvider =
     AutoDisposeProvider<FreeTimeRepository>.internal(
-      freeTimeRepository,
-      name: r'freeTimeRepositoryProvider',
-      debugGetCreateSourceHash:
-          const bool.fromEnvironment('dart.vm.product')
-              ? null
-              : _$freeTimeRepositoryHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  freeTimeRepository,
+  name: r'freeTimeRepositoryProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$freeTimeRepositoryHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element

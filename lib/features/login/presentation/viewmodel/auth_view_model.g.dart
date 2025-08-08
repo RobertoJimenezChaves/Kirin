@@ -12,15 +12,14 @@ String _$authViewModelHash() => r'ccebbe1bdb29bbe2de1bbe23cd26bd799af8c67a';
 @ProviderFor(AuthViewModel)
 final authViewModelProvider =
     AutoDisposeNotifierProvider<AuthViewModel, AsyncLoading>.internal(
-      AuthViewModel.new,
-      name: r'authViewModelProvider',
-      debugGetCreateSourceHash:
-          const bool.fromEnvironment('dart.vm.product')
-              ? null
-              : _$authViewModelHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  AuthViewModel.new,
+  name: r'authViewModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$authViewModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 typedef _$AuthViewModel = AutoDisposeNotifier<AsyncLoading>;
 // ignore_for_file: type=lint
