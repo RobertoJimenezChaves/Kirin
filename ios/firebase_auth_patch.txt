@@ -1,0 +1,4 @@
+- (void)getCredentialWithUIDelegate:(nullable id<FIRAuthUIDelegate>)UIDelegate
+                         completion:(nullable void (^)(FIRAuthCredential *_Nullable credential,
+                                                       NSError *_Nullable error))completion
+    API_UNAVAILABLE(macos, tvos, watchos) NS_SWIFT_NAME(getCredential(with:completion:));

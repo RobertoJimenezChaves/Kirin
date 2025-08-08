@@ -1,7 +1,7 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:retrofit/http.dart';
+import 'package:retrofit/retrofit.dart';
 
 import '../../../core/data/models/collaborator.dart';
 import '../../../core/utils/constants.dart';

@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../data/providers/auth_provider.dart';
 
@@ -19,6 +18,6 @@ class AuthViewModel extends _$AuthViewModel {
 
   Future<void> logout() async {
     await ref.read(authRepositoryProvider).logout();
-    state = null;
+    state = const AsyncLoading();
   }
 }

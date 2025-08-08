@@ -11,7 +11,6 @@ class AddFreeTimeResponse with _$AddFreeTimeResponse {
 
   factory AddFreeTimeResponse.fromJson(Map<String, dynamic> json) => _$AddFreeTimeResponseFromJson(json);
 }
-
 @freezed
 class FreeTimeListResponse with _$FreeTimeListResponse {
   const factory FreeTimeListResponse({required String status, required FreeTimeListDataResponse data}) = _FreeTimeListResponse;

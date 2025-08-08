@@ -1,0 +1,2 @@
+/Users/roberto.jimenezch/Documents/FuentesApp/PFlutter/Kirin/android/app/.cxx/Debug/1w6c1u4k/x86/CMakeFiles/edit_cache.dir
+/Users/roberto.jimenezch/Documents/FuentesApp/PFlutter/Kirin/android/app/.cxx/Debug/1w6c1u4k/x86/CMakeFiles/rebuild_cache.dir
