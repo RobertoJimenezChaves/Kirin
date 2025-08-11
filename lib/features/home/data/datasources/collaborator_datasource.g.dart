@@ -13,7 +13,7 @@ class _CollaboratorDataSource implements CollaboratorDataSource {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'http://192.168.86.246:3001';
+    baseUrl ??= 'http://192.168.86.26:3001';
   }
 
   final Dio _dio;

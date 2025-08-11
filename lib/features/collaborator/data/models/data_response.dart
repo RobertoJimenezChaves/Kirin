@@ -13,24 +13,22 @@ class AddDataResponse with _$AddDataResponse {
 
   factory AddDataResponse.fromJson(Map<String, dynamic> json) => _$AddDataResponseFromJson(json);
 }
-
 @freezed
 class EditDataResponse with _$EditDataResponse {
   const factory EditDataResponse({required int id}) = _EditDataResponse;
 
   factory EditDataResponse.fromJson(Map<String, dynamic> json) => _$EditDataResponseFromJson(json);
 }
-
 @freezed
 class AddFreeTimeDataResponse with _$AddFreeTimeDataResponse {
   const factory AddFreeTimeDataResponse({required int id}) = _AddFreeTimeDataResponse;
 
   factory AddFreeTimeDataResponse.fromJson(Map<String, dynamic> json) => _$AddFreeTimeDataResponseFromJson(json);
 }
-
 @freezed
 class FreeTimeListDataResponse with _$FreeTimeListDataResponse {
   const factory FreeTimeListDataResponse({required List<FreeTime> freeTimeList}) = _FreeTimeListDataResponse;
 
   factory FreeTimeListDataResponse.fromJson(Map<String, dynamic> json) => _$FreeTimeListDataResponseFromJson(json);
+
 }
